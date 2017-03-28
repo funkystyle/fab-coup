@@ -34,3 +34,12 @@ body {
     background-color: #f3f3f3;
     font-family: Dosis-Medium;
 }
+h3 {
+    font-family: Dosis-Medium;
+}
+.margin-20 {
+    margin: 20px 0;
+}
+.panel-heading {
+    background-color: #fff !important;
+}

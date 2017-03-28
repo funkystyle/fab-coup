@@ -25,7 +25,7 @@
   z-index: 2;
 }
 .store-thumbnail {
-    border: 1px solid #F5F5F5;
+    border: 1px solid #ddd;
 }
 .store-thumbnail a img, .store-thumbnail img {
     width: 120px;

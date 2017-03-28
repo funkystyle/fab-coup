@@ -1,5 +1,5 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+	background: #4b4261;
+    min-height: 120px;
+    padding: 20px 0;
 }

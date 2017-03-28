@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="modules/home/home.css" />
+<!-- Header directive -->
+<header-component></header-component>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-md-9 aol-sm-12 pad-0">
+            <div id="Carousel" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <a href="">
+                            <img src="https://fabpromocodes.in/wp-content/uploads/2017/02/amazon-sale.jpg" class="img-responsive">
+                        </a>
+                    </div>
+                   <div class="item">
+                     <a href="">
+                         <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/foodpanda-offers.jpg" class="img-responsive">
+                     </a>
+                    </div>
+                   <div class="item">
+                     <a href="">
+                         <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/zipker-sale.jpg" class="img-responsive">
+                     </a>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- end col -->
+        <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="" class="side-banner">
+                        <img src="https://fabpromocodes.in/wp-content/uploads/2016/10/side-banner-2.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="" class="side-banner">
+                        <img src="https://fabpromocodes.in/wp-content/uploads/2017/02/100-Cashback-Offers.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <a href="" class="side-banner">
+                        <img src="https://fabpromocodes.in/wp-content/uploads/2016/11/travel.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- popular stores -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 pad-0">
+            <h3><strong>Popular Stores</strong></h3>
+        </div>
+    </div>
+    <div class="row" ng-if="stores.length">
+        <div class="col-lg-2" style="padding-left: 0;" ng-repeat="item in stores | limitTo: 12">
+            <div class="thumbnail store-thumbnail">
+                <a href="/store/{{ item.id }}" title="{{ item.title }}">
+                    <img ng-src="{{ item.thumbnailUrl }}" alt="{{ item.title }}" title="{{ item.title }}">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end ofpopular stores -->
+
+<!-- coupons and offers -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h3>
+                <b>Best Saving Online Shopping Coupons & Offers</b>
+            </h3>
+        </div>
+    </div>
+    <div class="row" ng-if="stores.length">
+        <div class="col-lg-3 col-md-3 col-sm-12" style="padding-left: 0;" ng-repeat="item in stores | limitTo: 12">
+            <div class="thumbnail store-thumbnail" style="padding: 15px;">
+                <img src="{{ item.thumbnailUrl }}" alt="{{ item.title }}" title="{{ item.title }}">
+
+                <h5 style="color: #333;" class="text-center">
+                    <b>{{ item.title }}</b>
+                </h5>
+                <p class="text-center">
+                    <a href="" class="btn btn-md btn-block btn-info">
+                        Show Coupon Code
+                    </a>
+                </p>
+                <p class="text-center">
+                    <a href="">View all Ola Cabs Offers</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of coupons and offers -->
+
+<!-- footer directive -->
+<footer-component></footer-component>

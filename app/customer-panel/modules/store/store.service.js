@@ -1,4 +1,4 @@
-angular.module("storeModule", [
+angular.module("storeServiceModule", [
     {
         name: 'constantModule',
         files: ['modules/constants.module.js']

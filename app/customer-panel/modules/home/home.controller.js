@@ -8,8 +8,8 @@ angular.module('homeModule', [
         files: ['modules/footer/footer.controller.js']
     },
     {
-        name: "storeModule",
-        files: ['modules/services/store.module.js']
+        name: "storeServiceModule",
+        files: ['modules/store/store.service.js']
     }
 ]).controller('homeCtrl', ['$scope', '$ocLazyLoad', 'storeService',
     function ($scope, $ocLazyLoad, storeService) {

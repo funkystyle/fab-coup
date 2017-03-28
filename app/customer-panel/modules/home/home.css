@@ -48,3 +48,10 @@
 .side-banner img {
     margin-bottom: 5px;
 }
+.panel-heading {
+    background-color: #fff !important;
+    border-bottom: 0px solid #FFF !important;
+}
+.panel-body {
+    min-height: 150px;
+}

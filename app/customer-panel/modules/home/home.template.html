@@ -63,7 +63,7 @@
         <div class="col-lg-2" style="padding-left: 0;" ng-repeat="item in stores | limitTo: 12">
             <div class="thumbnail store-thumbnail">
                 <a href="/store/{{ item.id }}" title="{{ item.title }}">
-                    <img ng-src="{{ item.thumbnailUrl }}" alt="{{ item.title }}" title="{{ item.title }}">
+                    <img ng-src="https://fabpromocodes.in/wp-content/uploads/2016/02/olacabs-150x60.png" alt="{{ item.title }}" title="{{ item.title }}">
                 </a>
             </div>
         </div>
@@ -80,7 +80,7 @@
     </div>
     <!-- coupons div starts here -->
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 pad-0">
+        <div class="col-lg-6 col-md-6 col-sm-12 pad-left-0" ng-repeat="item in stores | limitTo: 4">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
@@ -88,14 +88,15 @@
                             <img style="max-height: 50px;" src="https://fabpromocodes.in/wp-content/uploads/2016/02/olacabs-150x60.png" alt="">
                         </div>
                         <div class="col-lg-2 col-sm-2 col-md-2 pull-right">
-                            <i class="fa fa-home"></i>
+                            <!--<i class="fa fa-home"></i>-->
                         </div>
                     </div>
                 </div>
-                <div class="panel-body">
-                    <p>Headig</p>
+                <div class="panel-body" style="">
+                    <h4 style="font-weight: bold;">RS.{{ $index +1 }}00 OFF</h4>
+                    <p>FLIGHT SUPER SAVER SALE - {{ item.title }}</p>
                 </div>
-                <div class="panel-footer">
+                <div class="panel-footer" style="background: #DDD;">
                     <p>Hey</p>
                 </div>
             </div>

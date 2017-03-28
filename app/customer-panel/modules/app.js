@@ -20,4 +20,19 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
+            .state('login', {
+                url: '/login',
+                templateUrl: 'modules/login/login.template.html',
+                controller: "loginCtrl",
+                resolve: {
+                    home: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'loginModule',
+                                files: ['modules/login/login.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
     }])

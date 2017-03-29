@@ -52,12 +52,9 @@
     background-color: #fff !important;
     border-bottom: 0px solid #FFF !important;
 }
-.panel-body {
-    min-height: 150px;
-}
 .panel-footer{
   min-height: 50px !important;
-  background-color: skyblue;
+  background-color: #5FA7E6;
 }
 .star-rating{
   margin-left: 30px !important;
@@ -69,5 +66,20 @@
 }
 .arrow{
   color: #fff;
+  line-height: 30px !important;
 }
+.show-coupon-p{
+  margin-bottom: 0px;
+  line-height: 30px;
+  color: #fff;
+  font-family: Dosis-SemiBold;
 
+}
+.desc-p {
+  color: #5FA7E6;
+}
+.offer-zone {
+  border: 1px solid #DDD;
+    padding: 4px 10px;
+    border-radius: 50px;
+}

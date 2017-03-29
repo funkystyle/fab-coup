@@ -83,3 +83,17 @@
     padding: 4px 10px;
     border-radius: 50px;
 }
+.show-coupon-btn{
+  color:#fff !important;
+  background-color: #928EAF;
+  border:#928EAF;
+  margin-bottom: 15px;
+}
+.top-coupons-offers-p{
+  text-decoration: underline;
+  color: #5FA7E6;
+}
+.top-coupons-p-info{
+  margin-top: 20px !important;
+  margin-bottom: 15px !important;
+}

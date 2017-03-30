@@ -1,8 +1,12 @@
 .footer {
-	background: #4b4261;
+	/*background: #4b4261;*/
     min-height: 120px;
     padding: 20px 0;
 }
 .footer ul li{
 	 list-style-type: none ;
+	 margin-bottom: 12px !important;
+}
+.footer ul li a{
+	color:#11A7B9;
 }

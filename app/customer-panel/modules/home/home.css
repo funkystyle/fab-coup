@@ -74,3 +74,9 @@
 .panel-footer a {
   line-height: 40px;
 }
+h5 {
+  font-family: Dosis-Medium;
+}
+.top-deal-img {
+  max-height: 200px;
+}

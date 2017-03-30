@@ -10,6 +10,8 @@
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     width: 100%;
+    max-height: 500px;
+    height: 500px;
 }
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
@@ -23,6 +25,18 @@
 }
 .carousel-fade .carousel-control {
   z-index: 2;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 15;
+  margin: 0;
+  padding: 0 25px 25px 0;
+  text-align: right;
 }
 .store-thumbnail {
     border: 1px solid #ddd;
@@ -39,7 +53,7 @@
     text-transform: capitalize;
 }
 .carousel {
-    height: 320px;
+    height: 500px;
     width: 100%;
 }
 .pad-0 {
@@ -53,16 +67,9 @@
     border-bottom: 0px solid #FFF !important;
 }
 .panel-footer{
-  min-height: 50px !important;
-  background-color: #5FA7E6;
-}
-.star-rating{
-  margin-left: 30px !important;
-  color: #CCC9C9;
-}
-.share{
-  margin-top:3px;
-  color: #CCC9C9;
+  border-top: 1px solid #FFF;
+  background-color: #FFF;
+  padding: 0 15px;
 }
 .arrow{
   color: #fff;
@@ -77,11 +84,6 @@
 }
 .desc-p {
   color: #5FA7E6;
-}
-.offer-zone {
-  border: 1px solid #DDD;
-    padding: 4px 10px;
-    border-radius: 50px;
 }
 .show-coupon-btn{
   color:#fff !important;

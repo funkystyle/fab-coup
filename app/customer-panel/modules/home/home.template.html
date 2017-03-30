@@ -3,54 +3,38 @@
 <!-- Header directive -->
 <header-component></header-component>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-9 col-md-9 aol-sm-12 pad-0">
-            <div id="Carousel" class="carousel slide carousel-fade">
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="">
-                            <img src="https://fabpromocodes.in/wp-content/uploads/2017/02/amazon-sale.jpg" class="img-responsive">
-                        </a>
-                    </div>
-                   <div class="item">
-                     <a href="">
-                         <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/foodpanda-offers.jpg" class="img-responsive">
-                     </a>
-                    </div>
-                   <div class="item">
-                     <a href="">
-                         <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/zipker-sale.jpg" class="img-responsive">
-                     </a>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- end col -->
-        <div class="col-lg-3 col-md-3 col-sm-12">
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="" class="side-banner">
-                        <img src="https://fabpromocodes.in/wp-content/uploads/2016/10/side-banner-2.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="" class="side-banner">
-                        <img src="https://fabpromocodes.in/wp-content/uploads/2017/02/100-Cashback-Offers.jpg" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <a href="" class="side-banner">
-                        <img src="https://fabpromocodes.in/wp-content/uploads/2016/11/travel.jpg" alt="">
-                    </a>
-                </div>
-            </div>
+<div id="Carousel" class="carousel slide carousel-fade">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="">
+                <img src="https://fabpromocodes.in/wp-content/uploads/2017/02/amazon-sale.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/foodpanda-offers.jpg" class="img-responsive">
+            </a>
+        </div>
+        <div class="item">
+            <a href="">
+                <img src="https://fabpromocodes.in/wp-content/uploads/2017/03/zipker-sale.jpg" class="img-responsive">
+            </a>
         </div>
     </div>
-</div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div> <!-- end carousel -->
 
 <!-- popular stores -->
 <div class="container">
@@ -71,6 +55,22 @@
 </div>
 <!-- end ofpopular stores -->
 
+<!-- coupons by category wise -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 col-md-12 pad-left-0">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="text-center">
+                        Most Used Coupons &nbsp;| &nbsp; Recently Used Coupons &nbsp;| &nbsp;Top coupons &nbsp;| &nbsp;Last Minute Deals
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of coupons by category wise -->
+
 <!-- coupons and offers -->
 <div class="container">
     <div class="row">
@@ -87,31 +87,14 @@
                         <div class="col-lg-5 col-md-5 col-sm-5 pull-left">
                             <img style="max-height: 50px;" src="https://fabpromocodes.in/wp-content/uploads/2016/02/olacabs-150x60.png" alt="">
                         </div>
-                        <div class="col-lg-2 col-sm-2 col-md-2 pull-right">
-                           <i class="fa fa-star-o star-rating" aria-hidden="true"></i>
-                           <i class="fa fa-share-alt share pull-right" aria-hidden="true"></i>
+                        <div class="col-lg-3 col-sm-3 col-md-3 pull-right">
+                           <h4 style="font-weight: bold;">RS.{{ $index +1 }}00 OFF</h4>
                         </div>
                     </div>
                 </div>
-                <div class="panel-body" style="">
-                    
+                <div class="panel-body">
+                    <p style="min-height: 40px;">FLIGHT SUPER SAVER SALE - {{ item.title }}</p>
                     <div class="row">
-                        <div class="col-lg-6 col-sm-6 col-md-6">
-                            <h4 style="font-weight: bold;">RS.{{ $index +1 }}00 OFF</h4>
-                        </div>
-                        <div class="col-sm-3 col-md-3 col-lg-3 pull-right">
-                             <div class="offer-zone pull-right">
-                                 <i class="fa fa-star-o"></i>&nbsp;
-                                 Offer Zone
-                             </div>
-                        </div>
-                    </div>
-
-                    <p style="min-height: 70px;">FLIGHT SUPER SAVER SALE - {{ item.title }}</p>
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <p class="desc-p">Show Description</p>
-                        </div>
                         <div class="col-lg-3 col-sm-3 col-md-3 pull-right">
                            <p class="desc-p pull-right">Show All Offers</p>
                         </div>
@@ -119,13 +102,14 @@
                 </div>
                 <div class="panel-footer">
                     <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12" style="cursor:pointer;">
-                            <div class="pull-left">
-                                <p class="show-coupon-p">SHOW COUPON CODE</p>
-                            </div>
-                            <div class="pull-right">
-                                <i class="fa fa-arrow-right arrow" aria-hidden="true"></i>
-                            </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <button class="btn btn-md btn-link btn-block">Show Description</button>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3">
+                            <button class="btn btn-md btn-link btn-block">Verified</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 pad-0">
+                            <button class="btn btn-md btn-info btn-block">Show all Offers</button>
                         </div>
                     </div>
                     

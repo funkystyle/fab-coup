@@ -43,3 +43,6 @@ h2, h3 {
 .breadcrumb {
     background-color: inherit !important;
 }
+.border-0 {
+    border: 0px solid #FFFFFF;
+}

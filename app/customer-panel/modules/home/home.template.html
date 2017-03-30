@@ -39,8 +39,8 @@
 <!-- popular stores -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 pad-0 margin-20 text-center">
-            <h3 class="store-heading">Best Saving Online Shopping Coupons & Offers</h3>
+        <div class="col-lg-12 pad-0 margin-20">
+            <h3 class="store-heading">Popular Stores</h3>
         </div>
     </div>
     <div class="row" ng-if="stores.length">
@@ -73,14 +73,9 @@
 
 <!-- coupons and offers -->
 <div class="container">
-    <div class="row">
-        <div class="col-lg-12 pad-0 margin-20 text-center">
-            <h3 class="store-heading">Recently Updated Coupons & Offers</h3>
-        </div>
-    </div>
     <!-- coupons div starts here -->
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 pad-left-0" ng-repeat="item in stores | limitTo: 4">
+        <div class="col-lg-6 col-md-6 col-sm-12 pad-left-0" ng-repeat="item in stores | limitTo: 6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
@@ -102,11 +97,11 @@
                 </div>
                 <div class="panel-footer">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3">
-                            <button class="btn btn-md btn-link btn-block">Show Description</button>
+                        <div class="col-lg-3 col-md-3 col-sm-3 text-left">
+                            <a href="">Show Description</a>
                         </div>
                         <div class="col-lg-3 col-md-3 col-sm-3">
-                            <button class="btn btn-md btn-link btn-block">Verified</button>
+                            <a href="">Verified</a>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 pad-0">
                             <button class="btn btn-md btn-info btn-block">Show all Offers</button>
@@ -124,28 +119,26 @@
 <!-- Top Catagories start Here -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 pad-0 margin-20 text-center">
-            <h3 class="store-heading">Top Categories</h3>
-        </div>
-    </div>
-</div>
-
-<div class="panel panel-default" style="border: 0px solid #FFF;">
-    <div class="panel-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 pad-left-0" ng-repeat="item in stores | limitTo: 8">
-                    <div class="well">
-                        {{ item.title | limitTo: 35 }} 
-                        {{item.title.length > 35 ? '...' : ''}}
-                    </div>
+        <div class="col-lg-12 pad-left-0 text-center">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Top Deal of the Week</h3>
                 </div>
-
             </div>
         </div>
     </div>
 </div>
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0" ng-repeat="item in stores | limitTo: 8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3>Deal of the day</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- Top Catagories End Here  -->
 
 

@@ -10,3 +10,24 @@
 .footer ul li a{
 	color:#11A7B9;
 }
+.panel-body1{
+	background-color: black;
+	height: 250px;
+}
+.footer-p{
+	color: white!important;
+	font-weight: bold;
+	font-size: 12px;
+}
+.panel-body1 a{
+	color: #fff;
+}
+.panel-body1 ul li {
+	list-style-type: none ;
+	 margin-bottom: 12px !important;
+	 color: #fff;
+}
+.panel-body1 h6 {
+	color: white;
+	margin-bottom: 12px !important;
+}

@@ -15,18 +15,28 @@
 }
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
 }
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
+    opacity: 1;
 }
 .carousel-fade .carousel-control {
-  z-index: 2;
+    z-index: 2;
 }
-
+.carousel-control span {
+    position: absolute;
+    top: 35%;
+    font-size: 70px;
+}
+a.left span {
+  left: 12%;
+}
+a.right span {
+  right: 12%;
+}
 .carousel-indicators {
   position: absolute;
   bottom: 0;

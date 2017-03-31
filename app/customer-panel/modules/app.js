@@ -53,8 +53,8 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
             })
             // Store Info
             .state('store-info', {
-                url: '/store-info',
-                templateUrl: 'modules/store/store.info.template.html',
+                url: '/store/:id',
+                templateUrl: 'modules/store.info/store.info.template.html',
                 controller: "storeCtrl",
                 resolve: {
                     home: function ($ocLazyLoad) {

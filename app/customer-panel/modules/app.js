@@ -51,4 +51,20 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
+            // Store Info
+            .state('store-info', {
+                url: '/store-info',
+                templateUrl: 'modules/store/store.info.template.html',
+                controller: "storeCtrl",
+                resolve: {
+                    home: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'storeModule',
+                                files: ['modules/store/store.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
     }])

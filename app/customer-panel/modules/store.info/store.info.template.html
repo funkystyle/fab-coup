@@ -78,17 +78,17 @@
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active col-lg-4 pad-0 text-center">
-							<a href="" aria-controls="home" role="tab" data-toggle="tab">All &nbsp;
+							<a href="" data-target="#all-tab" aria-controls="home" role="tab" data-toggle="tab">All &nbsp;
 								<span class="label label-info">40</span>
 							</a>
 						</li>
 						<li role="presentation" class="col-lg-4 pad-0 text-center">
-							<a href="" aria-controls="profile" role="tab" data-toggle="tab">Deals&nbsp;
+							<a href="" data-target="#deals-tab" aria-controls="profile" role="tab" data-toggle="tab">Deals&nbsp;
 								<span class="label label-primary">30</span>
 							</a>
 						</li>
 						<li role="presentation" class="col-lg-4 pad-0 text-center">
-							<a href="" aria-controls="messages" role="tab" data-toggle="tab">
+							<a href="" data-target="#coupons-tab" aria-controls="messages" role="tab" data-toggle="tab">
 								Coupons&nbsp;
 								<span class="label label-success">20</span>
 							</a>
@@ -160,6 +160,79 @@
 			<!--end panel-->
 		</div>
 		<!--end col-->
+		<div class="col-lg-9 col-md-9 col-sm-12">
+			<div class="tab-content">
+				<div class="tab-pane active" id="all-tab">
+					<div class="panel panel-default" ng-repeat="item in [1,2,3,4]">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2">
+									<div class="deal-price text-center">
+										<h4>
+											Rs. 1000
+											<br />
+											OFF
+										</h4>
+										<div class="deal">Deal</div>
+									</div> <!-- end deal-price -->
+								</div> <!-- end col -->
+								<div class="col-lg-10 col-md-10 col-sm-10">
+									<h3 class="margin-top-0">Upto Rs. 30 Supercash everyday on Recharge</h3>
+
+									<p style="opacity: 0.6;">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+										standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+									</p>
+									<p>
+										<a href="">See all Mobile Recharge Coupons</a>
+									</p>
+								</div>
+							</div> <!-- end row -->
+						</div> <!-- end panel body -->
+						<!--panel footer-->
+						<div class="panel-footer coupon-footer">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-heart-o"></i> &nbsp;
+									Verified today
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-comment-o"></i> &nbsp;
+									Comment
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-bug"></i> &nbsp;
+									Report Coupon
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<button class="btn btn-md btn-block btn-info">
+										Show Coupon Code
+										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!--end panel footer -->
+					</div>
+				</div> <!-- tab-1 -->
+				<div class="tab-pane" id="deals-tab">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<p>I'm in Section 2.</p>
+						</div>
+					</div>
+				</div> <!-- tab-2 -->
+				<div class="tab-pane" id="coupons-tab">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<p>I'm in Section 3.</p>
+						</div>
+					</div>
+				</div> <!-- tab-3 -->
+			</div>
+		</div>
+		<!-- end col -->
 	</div>
 	<!--end row-->
 </div>

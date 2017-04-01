@@ -67,4 +67,20 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
+            // category info
+            .state('category-info', {
+                url: '/category/:id',
+                templateUrl: 'modules/category.info/category.info.template.html',
+                controller: "storeCtrl",
+                resolve: {
+                    home: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'categoryModule',
+                                files: ['modules/category.info/category.info.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
     }])

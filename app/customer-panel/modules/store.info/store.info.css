@@ -1,10 +1,56 @@
-.store-info{
+.breadcrumb {
+	padding: 0px 15px;
+    margin-bottom: 0px !important;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 0;
+    font-size: 13px;
+}
+.store-info {
+	color: #888;
+}
+.thumbnail {
+	border: 0px solid #FFFFFF;
+	border-bottom: 1px solid #DDDDDD;
+	padding-bottom: 20px;
 	margin-bottom: 5px;
-    border-bottom: 1px solid #322b2b !important;
-    padding: 10px 0;
 }
-.visit-btn{
-	background-color: #7e70a1 !important;
-	color: white;
-	border:#7e70a1;
+.thumbnail img {
+	width: 70%;
 }
+.thumbnail .fa {
+	position: absolute;
+    top: -2px;
+    right: 12px;
+    font-size: 20px;
+	cursor: pointer;
+}
+.h3-heading {
+	margin-bottom: 15px;
+}
+.rating-stars i {
+	padding: 0 3px;
+	color: #888888;
+}
+.social-well {
+	padding: 15px;
+	background-color: #FFFFFF;
+}
+.well {
+	margin-bottom: 10px !important;
+}
+.social-well p {
+	margin-bottom: 0;
+}
+/* tabs */
+.nav-tabs {
+	border-bottom: 0px solid #FFFFFF;
+}
+.nav-tabs>li>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+	border: 1px solid rgba(221, 221, 221, 0.29);
+}
+.nav-tabs li a span {
+	margin-top: -5px;
+	border-radius: 10px;
+}
+/* end tabs */

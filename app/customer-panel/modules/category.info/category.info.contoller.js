@@ -1,4 +1,4 @@
-ngular
+angular
     .module("categoryinfoModule", [
         {
             name: "headerModule",
@@ -7,6 +7,9 @@ ngular
     
     ])
     // controller
-    .controller("categoryinfoCtrl", storeController);
+    .controller("categoryinfoCtrl", categoryInfoController);
 
-// store controller
+// categoryInfoController controller
+function categoryInfoController ($scope) {
+    console.log("categoryInfoController")
+}

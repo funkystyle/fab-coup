@@ -2,7 +2,7 @@
     background-color: #2f1231;
     color: #FFFFFF;
 }
-.deal-of-day, .navbar, .navbar-default .navbar-nav>.open>a,
+.navbar, .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus, .navbar-nav>li>a {
     background-color: #7e70a1 !important;
     color: #fff;

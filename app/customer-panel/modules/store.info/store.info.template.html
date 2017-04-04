@@ -13,7 +13,7 @@
 			<div class="row">
 				<div class="col-lg-3" style="border-right: 1px solid #ddd; margin-top: 23px;">
 					<div class="thumbnail">
-						<i class="fa fa-heart-o"></i>
+						<i class="fa" ng-class="{'fa-heart-o': !favorite.favorite, 'fa-heart': favorite.favorite}" ng-click="manageFavorite()"></i>
 						<img src="http://bargainbazaar.in/wp-content/uploads/2016/03/flipkart_logo_detail.jpg" alt="Flipkart logo" title="Flip cart logo">
 					</div> <!-- end thumbnail -->
 					<p class="text-center font-bold">
@@ -215,12 +215,37 @@
 				<!--end panel body-->
 			</div>
 			<!--end panel-->
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h5 class="font-bold">Ola Cabs Social</h5>
+				</div>
+				<!--panel heading-->
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+							<img src="modules/assets/images/facebook.png" style="width: 90%;" />
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+							<img src="modules/assets/images/google-plus.png" style="width: 90%;" />
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+							<img src="modules/assets/images/linkedin.png" style="width: 90%;" />
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+							<img src="modules/assets/images/twitter.png" style="width: 90%;" />
+						</div>
+					</div>
+				</div>
+				<!--end panel body-->
+			</div>
+			<!--end panel-->
 		</div>
 		<!--end col-->
 		<div class="col-lg-9 col-md-9 col-sm-12">
 			<div class="tab-content">
 				<div class="tab-pane active" id="all-tab">
-					<div class="panel panel-default" ng-repeat="item in [1,2,3,4]">
+					<div class="panel panel-default" ng-repeat="item in [1,2]">
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-2 col-md-2 col-sm-2">
@@ -234,12 +259,20 @@
 									</div> <!-- end deal-price -->
 								</div> <!-- end col -->
 								<div class="col-lg-10 col-md-10 col-sm-10">
-									<h3 class="margin-top-0">Upto Rs. 30 Supercash everyday on Recharge</h3>
-
-									<p style="opacity: 0.6;">
+									<h3 class="margin-top-0 coupon-heading">
+										Upto Rs. 30 Supercash everyday on Recharge
+										<span class="pull-right">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									</h3>
+									<p style="opacity: 0.6; line-height: 25px;">
 										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
 										standard dummy text ever since the 1500s, 
 										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+										<span class="pull-right">
+											<a href="">Show More</a>
+										</span>
 									</p>
 									<p>
 										<a href="">See all Mobile Recharge Coupons</a>
@@ -272,6 +305,172 @@
 						</div>
 						<!--end panel footer -->
 					</div>
+
+					<!-- promo codes starts here --> <!-- panel -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<h3 style="margin-bottom: 20px;">Ola Promo Codes</h3>
+						</div>
+					</div>
+					<div class="panel panel-default" ng-repeat="item in [1,2]">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2">
+									<div class="deal-price text-center">
+										<h4>
+											Rs. 1000
+											<br />
+											OFF
+										</h4>
+										<div class="deal">Deal</div>
+									</div> <!-- end deal-price -->
+								</div> <!-- end col -->
+								<div class="col-lg-10 col-md-10 col-sm-10">
+									<h3 class="margin-top-0 coupon-heading">
+										Upto Rs. 30 Supercash everyday on Recharge
+										<span class="pull-right">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									</h3>
+									<p style="opacity: 0.6; line-height: 25px;">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+										standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+										<span class="pull-right">
+											<a href="">Show More</a>
+										</span>
+									</p>
+									<p>
+										<a href="">See all Mobile Recharge Coupons</a>
+									</p>
+								</div>
+							</div> <!-- end row -->
+						</div> <!-- end panel body -->
+						<!--panel footer-->
+						<div class="panel-footer coupon-footer">
+							<div class="row">
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-heart-o"></i> &nbsp;
+									Verified today
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-comment-o"></i> &nbsp;
+									Comment
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<i class="fa fa-bug"></i> &nbsp;
+									Report Coupon
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3">
+									<button class="btn btn-md btn-block btn-info">
+										Show Coupon Code
+										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+						<!--end panel footer -->
+					</div><!-- end panel --><!-- end upto promo codes -->
+
+					<!-- Deals carousel starts here -->
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<h3 style="margin-bottom: 20px;">
+								Ola Deals
+							</h3>
+						</div><!-- end col -->
+					</div><!-- end row -->
+					<div class="row">
+						<div class="col-md-12">
+							<div id="Carousel" class="carousel slide">
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								
+							<div class="item active">
+								<div class="row">
+									<div class="col-md-4">
+										<div href="#" class="thumbnail">
+											<h4>Deals upto 50% OFF</h4>
+											<img src="http://placehold.it/250x250" alt="Image" style="min-width:100%;">
+											<div class="row" style="margin-top: 20px;">
+												<div class="col-lg-6 col-md-6 col-sm-6 pad-right-0">
+													<strike>Rs. {{ ($index + 2) * 200 }}</strike> &nbsp; &nbsp;
+													<a href="">Rs. {{($index + 1) * 150}}</a>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6 pad-left-0 text-right">
+													View Offers
+												</div>
+											</div>
+											<div class="row" style="margin-top: 20px;">
+												<div class="col-lg-12">
+													<button class="btn btn-md btn-info btn-block">
+														GET DEAL
+													</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+								</div><!--.row-->
+							</div><!--.item-->
+							
+							<div class="item">
+								<div class="row">
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+								</div><!--.row-->
+							</div><!--.item-->
+							
+							<div class="item">
+								<div class="row">
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<h4>Deals upto 50% OFF</h4>
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+									<div class="col-md-4">
+										<a href="#" class="thumbnail">
+											<img src="http://placehold.it/250x250" alt="Image" style="max-width:100%;">
+										</a>
+									</div>
+								</div><!--.row-->
+							</div><!--.item-->
+							
+							</div><!--.carousel-inner-->
+							<a data-slide="prev" data-target="#Carousel" class="left carousel-control">‹</a>
+							<a data-slide="next" data-target="#Carousel" class="right carousel-control">›</a>
+							</div><!--.Carousel-->
+						</div> <!-- end of col-lg-12 -->
+					</div> <!-- end of deals carousel --> <!-- end of row -->
 				</div> <!-- tab-1 -->
 				<div class="tab-pane" id="deals-tab">
 					<div class="panel panel-default">

@@ -1,15 +1,20 @@
-ngular
+angular
     .module("storeinfoModule", [
         {
             name: "headerModule",
             files: ['modules/header/header.controller.js']
-        },
-        {
-            name: "storeServiceModule",
-            files: ['modules/store/store.info.service.js']
         }
     ])
     // controller
-    .controller("storeinfoCtrl", storeController);
+    .controller("storeinfoController", storeinfoController);
 
-// store controller
+// storeinfoController
+function storeinfoController ($scope) {
+    $scope.favorite = {
+        favorite: false
+    };
+    // manageFavorite function
+    $scope.manageFavorite = function () {
+        $scope.favorite.favorite = !$scope.favorite.favorite;
+    }
+}

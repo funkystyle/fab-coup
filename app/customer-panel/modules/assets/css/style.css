@@ -1,38 +1,38 @@
 @font-face {
-    font-family: Dosis-Bold;
-    src: url('../fonts/Dosis-Bold.ttf');
+    font-family: OpenSans-Bold;
+    src: url('../fonts/OpenSans-Bold.ttf');
 }
 @font-face {
-    font-family: Dosis-Regular;
-    src: url('../fonts/Dosis-Regular.ttf');
+    font-family: OpenSans-Regular;
+    src: url('../fonts/OpenSans-Regular.ttf');
 }
 @font-face {
-    font-family: Dosis-ExtraBold;
-    src: url('../fonts/Dosis-ExtraBold.ttf');
+    font-family: OpenSans-ExtraBold;
+    src: url('../fonts/OpenSans-ExtraBold.ttf');
 }
 @font-face {
-    font-family: Dosis-ExtraLight;
-    src: url('../fonts/Dosis-ExtraLight.ttf');
+    font-family: OpenSans-ExtraLight;
+    src: url('../fonts/OpenSans-ExtraLight.ttf');
 }
 @font-face {
-    font-family: Dosis-Light;
-    src: url('../fonts/Dosis-Light.ttf');
+    font-family: OpenSans-Light;
+    src: url('../fonts/OpenSans-Light.ttf');
 }
 @font-face {
-    font-family: Dosis-Medium;
-    src: url('../fonts/Dosis-Medium.ttf');
+    font-family: OpenSans-Medium;
+    src: url('../fonts/OpenSans-Medium.ttf');
 }
 @font-face {
-    font-family: Dosis-SemiBold;
-    src: url('../fonts/Dosis-SemiBold.ttf');
+    font-family: OpenSans-SemiBold;
+    src: url('../fonts/OpenSans-SemiBold.ttf');
 }
 body {
     background-color: #f3f3f3;
-    font-family: Dosis-Medium;
+    font-family: OpenSans-regular;
     margin: 0 auto !important;
 }
 h2, h3, h4 {
-    font-family: Dosis-Medium;
+    font-family: OpenSans-Regular;
 }
 .margin-20 {
     margin: 20px 0;

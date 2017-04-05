@@ -1,9 +1,4 @@
-angular.module("storeServiceModule", [
-    {
-        name: 'constantModule',
-        files: ['modules/constants.module.js']
-    }
-]).factory('storeService', ['$http', '$q', 'URL', function ($http, $q, URL) {
+angular.module("storeServiceModule", ["constantModule"]).factory('storeService', ['$http', '$q', 'URL', function ($http, $q, URL) {
     return {
         get: function () {
             var def = $q.defer();

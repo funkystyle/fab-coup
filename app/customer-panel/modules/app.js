@@ -12,6 +12,13 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     files: ['modules/header/header.controller.js']
                 },
                 {
+                    name: "ui.bootstrap",
+                    files: [
+                        'bower_components/angular-bootstrap/ui-bootstrap.min.js', 
+                        'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
+                    ]
+                },
+                {
                     name: "storeServiceModule",
                     files: ['modules/store/store.service.js']
                 },

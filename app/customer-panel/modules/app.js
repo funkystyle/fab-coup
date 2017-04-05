@@ -1,8 +1,31 @@
 angular.module('APP', ['ui.router', 'oc.lazyLoad'])
-    .config(['$locationProvider', function ($locationProvider) {
+    .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', '$locationProvider',
+        function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $locationProvider) {
         // $locationProvider.html5Mode(true).hashPrefix('!');
-    }])
-    .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+
+        // configuring the lazyLoad angularjs files
+        $ocLazyLoadProvider.config({
+            debug: true,
+            modules: [
+                {
+                    name: 'headerModule',
+                    files: ['modules/header/header.controller.js']
+                },
+                {
+                    name: "storeServiceModule",
+                    files: ['modules/store/store.service.js']
+                },
+                {
+                    name: 'constantModule',
+                    files: ['modules/constants.module.js']
+                },
+                {
+                    name: "footerModule",
+                    files: ['modules/footer/footer.controller.js']
+                }
+            ]
+        });
+        
         $urlRouterProvider.otherwise('/404');
         $stateProvider
             .state('home', {

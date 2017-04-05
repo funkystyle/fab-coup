@@ -3,6 +3,10 @@ angular
         {
             name: "headerModule",
             files: ['modules/header/header.controller.js']
+        },
+        {
+            name: "footerModule",
+            files: ['modules/footer/footer.controller.js']
         }
     ])
     // controller

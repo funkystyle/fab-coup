@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e754a198-bd92-40f7-afdf-b267e0e96ea6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/customer-panel/modules/app.js" afterPath="$PROJECT_DIR$/app/customer-panel/modules/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/customer-panel/modules/category/category.controller.js" afterPath="$PROJECT_DIR$/app/customer-panel/modules/category/category.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/customer-panel/modules/category/category.css" afterPath="$PROJECT_DIR$/app/customer-panel/modules/category/category.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/customer-panel/modules/category/category.template.html" afterPath="$PROJECT_DIR$/app/customer-panel/modules/category/category.template.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/customer-panel/modules/store/store.controller.js" afterPath="$PROJECT_DIR$/app/customer-panel/modules/store/store.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -53,8 +49,8 @@
       <file leaf-file-name="category.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/customer-panel/modules/category/category.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+            <state relative-caret-position="483">
+              <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -625,12 +621,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491449922818</updated>
-      <workItem from="1491449924750" duration="2397000" />
+      <workItem from="1491449924750" duration="2703000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2397000" />
+    <option name="totallyTimeSpent" value="2703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1612" height="867" extended-state="0" />
@@ -729,8 +725,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/customer-panel/modules/category/category.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="49" lean-forward="true" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+        <state relative-caret-position="483">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding />
         </state>
       </provider>

@@ -1,11 +1,19 @@
 angular.module('APP', ['ui.router', 'oc.lazyLoad'])
+    .directive("include", [function () {
+        return {
+            restrict: "E",
+            templateUrl: function (ele, attrs) {
+                return attrs.path;
+            }
+        }
+    }])
     .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', '$locationProvider',
         function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $locationProvider) {
         // $locationProvider.html5Mode(true).hashPrefix('!');
 
         // configuring the lazyLoad angularjs files
         $ocLazyLoadProvider.config({
-            debug: true,
+            // debug: true,
             modules: [
                 {
                     name: 'headerModule',

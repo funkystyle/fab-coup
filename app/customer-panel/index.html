@@ -7,9 +7,15 @@
         <link rel="stylesheet" href="modules/assets/css/style.css" />
     </head>
     <body>
-       <ui-view>
-            <i>Loading ....</i>
-        </ui-view>
+        <!-- header -->
+        <include path="modules/header/header.template.html"></include>
+        <!-- end header -->
+
+       <ui-view></ui-view>
+
+        <!-- footer -->
+        <include path="modules/footer/footer.template.html"></include>
+        <!-- end footer -->
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>

@@ -98,6 +98,22 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 }
             })
             // category info
+            .state('category', {
+                url: '/category',
+                templateUrl: 'modules/category/category.template.html',
+                controller: "categoryCtrl",
+                resolve: {
+                    home: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'categoryModule',
+                                files: ['modules/category/category.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
+            // category info
             .state('categoryinfo', {
                 url: '/category/:id',
                 templateUrl: 'modules/category.info/category.info.template.html',

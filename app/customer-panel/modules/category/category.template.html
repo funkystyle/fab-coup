@@ -52,65 +52,22 @@
 		<div class="col-lg-12 col-md-12 col-sm-12">
 			<div class="order-list-alpha">
 				<ul>
-					<li>#</li>
-					<li>A</li>
-					<li>B</li>
-					<li>D</li>
-					<li>E</li>
-					<li>F</li>
-					<li>G</li>
-					<li>H</li>
-					<li>I</li>
-					<li>J</li>
-					<li>K</li>
-					<li>L</li>
-					<li>M</li>
-					<li>N</li>
-					<li>O</li>
-					<li>P</li>
-					<li>Q</li>
-					<li>R</li>
-					<li>S</li>
-					<li>T</li>
-					<li>U</li>
-					<li>V</li>
-					<li>W</li>
+					<li ng-repeat="(key, val) in categoryAlphabet" ng-class="{'opacity-5': !val.array.length}"
+                        ng-click="setSortkey(key, val)">
+						{{ key }}
+					</li>
 					<div style="clear:both;"></div>
 				</ul>
 			</div>
 		</div>
 	</div>
-	<div class="row main-popular-grids" ng-repeat="item in [1,2,3]" style="margin-top:30px;">
-		<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+	<div class="row main-popular-grids" style="margin-top:30px;">
+		<div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="item in categoryAlphabet[sorting.sorting].array">
             <a class="" href="">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="">
             </a>
             <div class="well social-well">
-            	<h4 class="text-center">Baby&Kids(12)</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-            	<h4 class="text-center">Furniture(16)</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-            	<h4 class="text-center">Recharge(2)</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-            	<h4 class="text-center">Food(12)</h4>
+            	<h4 class="text-center">{{ item.name }} ({{ item.count }})</h4>
             </div>
         </div>
 	</div>

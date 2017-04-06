@@ -4,6 +4,9 @@
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active{
 	border: none;
 }
+.opacity-5 {
+    opacity: 0.2 !important;
+}
 .social-well {
     padding: 10px;
     background-color: #FFFFFF;

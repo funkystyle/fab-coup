@@ -9,7 +9,7 @@ angular
             "P": {enable: false, array: []}, "Q": {enable: false, array: []}, "R": {enable: false, array: []}, "S": {enable: false, array: []},
             "T": {enable: false, array: []}, "U": {enable: false, array: []}, "V": {enable: false, array: []}, "W": {enable: false, array: []},
             "X": {enable: false, array: []}, "Y": {enable: false, array: []}, "Z": {enable: false, array: []}
-        }
+        };
         $scope.stores = [
             {
                 name: "Flipkart",
@@ -45,4 +45,4 @@ angular
                 scrollTop: $("#store_by_key_"+id).offset().top
             }, 'slow');
         }
-    }])
+    }]);

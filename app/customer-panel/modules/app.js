@@ -29,6 +29,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 {
                     name: "footerModule",
                     files: ['modules/footer/footer.controller.js']
+                },
+                //    Filters
+                {
+                    name: "Filters",
+                    files: ['modules/filters/filter.module.js']
                 }
             ]
         });

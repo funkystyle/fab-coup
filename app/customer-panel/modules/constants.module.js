@@ -1,4 +1,4 @@
 angular.module("constantModule", [])
     .constant('URL', {
-        store: "https://jsonplaceholder.typicode.com/photos"
+        store: "modules/JSON/store.json"
     });

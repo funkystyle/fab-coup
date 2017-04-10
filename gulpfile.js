@@ -14,6 +14,14 @@ gulp.task('browser-sync', function() {
     });
 });
 
+// browser syncing
+gulp.task('AdminSync', function() {
+    // Start the server
+    browserSync.init({
+        server: "app/Admin-Panel"
+    });
+});
+
 // minifying css fails function
 gulp.task("minifiCSS", function() {
 	// minifying css files using "gulp-clean-css"
@@ -55,3 +63,5 @@ gulp.task('watch', function(){
 })
 
 gulp.task("default", ['browser-sync', 'watch']);
+
+gulp.task("admin", ["AdminSync"])

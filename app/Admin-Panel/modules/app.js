@@ -5,7 +5,15 @@ angular.module("ADMIN", ['ui.router', 'oc.lazyLoad'])
     // configuring the lazyLoad angularjs files
     $ocLazyLoadProvider.config({
         // debug: true,
-        modules: []
+        modules: [
+            {
+                name: "ui.select",
+                files: [
+                    "bower_components/angular-ui-select/dist/select.min.js",
+                    "bower_components/angular-ui-select/dist/select.min.css"
+                ]
+            }
+        ]
     });
     
     $urlRouterProvider.otherwise("/")

@@ -12,4 +12,4 @@ angular.module('homeModule', ["headerModule", "storeServiceModule", "footerModul
         }, function (error) {
             console.log(error.data);
         });
-    }])
+    }]);

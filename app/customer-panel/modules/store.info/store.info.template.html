@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="modules/store.info/store.info.css"/>
 <link rel="stylesheet" href="../../bower_components/font-awesome-4.7.0/css/font-awesome.min.css" />
-
+<!-- header -->
+<include path="modules/header/header.template.html"></include>
+<!-- end header -->
 <!-- store info starts here -->
 <div class="container">
 	<div class="panel panel-default">
@@ -9,20 +11,16 @@
 				<div class="col-lg-3" style="border-right: 1px solid #ddd; margin-top: 23px;">
 					<div class="thumbnail">
 						<i class="fa" ng-class="{'fa-heart-o': !favorite.favorite, 'fa-heart': favorite.favorite}" ng-click="manageFavorite()"></i>
-						<img src="http://bargainbazaar.in/wp-content/uploads/2016/03/flipkart_logo_detail.jpg" alt="Flipkart logo" title="Flip cart logo">
+						<img ng-src="{{ store.image }}" alt="Flipkart logo" title="Flip cart logo">
 					</div> <!-- end thumbnail -->
 					<p class="text-center font-bold">
 						Rate this store
 					</p>
 					<p class="text-center rating-stars">
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
-						<i class="fa fa-star"></i>
+						<i class="fa fa-star" ng-repeat="item in [1,2,3,4,5]"></i>
 					</p>
 					<p class="text-center">
-						4.32/5 Based on 100 Votes
+						{{ store.rating }}/5 Based on 100 Votes
 					</p>
 				</div>
 				<div class="col-lg-9 col-sm-12 col-md-9 store-info">
@@ -34,18 +32,12 @@
 							<li class="active">Mobikwik Coupons</li>
 						</ol>
 					</div> <!-- end div -->
-					<h3 class="margin-top-0 h3-heading">Clothing Coupons and Offers</h3>
-					<p>
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-						when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-
-						Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-						Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-						when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+					<h3 class="margin-top-0 h3-heading" title="{{ store.h1 }}">{{ store.h1 }}</h3>
+					<p title="{{ store.top_description }}">
+						{{ store.top_description }}
 					</p>
 					<p>
-						39 Verified Coupons - 29 March 2017
+						{{ store.no_of_coupons }} Verified Coupons - {{ store.modified_date | date: "dd MMM yyyy" }}
 					</p>
 					<p>
 						<button class="btn btn-md pull-right btn-info">

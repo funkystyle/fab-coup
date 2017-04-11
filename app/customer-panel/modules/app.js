@@ -60,7 +60,7 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
             ]
         });
         
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/');
         $stateProvider
             .state('main', {
                 url: '',
@@ -92,16 +92,16 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
-            .state('main.login-or-signup', {
-                url: '/login-or-signup',
-                templateUrl: 'modules/authentication/authentication.template.html',
-                controller: "authenticationCtrl",
+            .state('main.login', {
+                url: '/login',
+                templateUrl: 'modules/login/login.template.html',
+                controller: "loginCtrl",
                 resolve: {
                     authentication: function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
                             {
-                                name: 'authenticationModule',
-                                files: ['modules/authentication/authentication.controller.js']
+                                name: 'loginModule',
+                                files: ['modules/login/login.module.js']
                             }
                         )
                     }

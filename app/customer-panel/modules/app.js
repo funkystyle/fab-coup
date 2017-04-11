@@ -7,9 +7,17 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
             }
         }
     }])
+    .run(["$rootScope", function ($rootScope) {
+        /*$rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams){
+            $(".loading").fadeIn();
+        });
+        $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams){
+            $(".loading").fadeOut();
+        });*/
+    }])
     .config(['$stateProvider', '$urlRouterProvider', '$ocLazyLoadProvider', '$locationProvider',
         function ($stateProvider, $urlRouterProvider, $ocLazyLoadProvider, $locationProvider) {
-        // $locationProvider.html5Mode(true).hashPrefix('!');
+        $locationProvider.html5Mode(false).hashPrefix('');
 
         // configuring the lazyLoad angularjs files
         $ocLazyLoadProvider.config({
@@ -24,6 +32,12 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     files: [
                         'bower_components/angular-bootstrap/ui-bootstrap.min.js', 
                         'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'
+                    ]
+                },
+                {
+                    name: "satellizer",
+                    files: [
+                        'bower_components/satellizer/dist/satellizer.js'
                     ]
                 },
                 {
@@ -46,9 +60,24 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
             ]
         });
         
-        $urlRouterProvider.otherwise('/404');
+        $urlRouterProvider.otherwise('/home');
         $stateProvider
-            .state('home', {
+            .state('main', {
+                url: '',
+                templateUrl: 'modules/header/header.template.html',
+                controller: "headerCtrl",
+                resolve: {
+                    main: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'headerModule',
+                                files: ['modules/header/header.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
+            .state('main.home', {
                 url: '/',
                 templateUrl: 'modules/home/home.template.html',
                 controller: "homeCtrl",
@@ -63,23 +92,23 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
-            .state('login', {
-                url: '/login',
-                templateUrl: 'modules/login/login.template.html',
-                controller: "loginCtrl",
+            .state('main.login-or-signup', {
+                url: '/login-or-signup',
+                templateUrl: 'modules/authentication/authentication.template.html',
+                controller: "authenticationCtrl",
                 resolve: {
-                    home: function ($ocLazyLoad) {
+                    authentication: function ($ocLazyLoad) {
                         return $ocLazyLoad.load(
                             {
-                                name: 'loginModule',
-                                files: ['modules/login/login.controller.js']
+                                name: 'authenticationModule',
+                                files: ['modules/authentication/authentication.controller.js']
                             }
                         )
                     }
                 }
             })
             // store state
-            .state('store', {
+            .state('main.store', {
                 url: '/store',
                 templateUrl: 'modules/store/store.template.html',
                 controller: "storeCtrl",
@@ -95,7 +124,7 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 }
             })
             // Store Info
-            .state('store-info', {
+            .state('main.store-info', {
                 url: '/store/:id',
                 templateUrl: 'modules/store.info/store.info.template.html',
                 controller: "storeinfoController",
@@ -111,7 +140,7 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 }
             })
             // category info
-            .state('category', {
+            .state('main.category', {
                 url: '/category',
                 templateUrl: 'modules/category/category.template.html',
                 controller: "categoryCtrl",
@@ -127,7 +156,7 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 }
             })
             // category info
-            .state('categoryinfo', {
+            .state('main.categoryinfo', {
                 url: '/category/:id',
                 templateUrl: 'modules/category.info/category.info.template.html',
                 controller: "categoryinfoCtrl",
@@ -142,4 +171,25 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     }
                 }
             })
-    }])
+            // Dashboard
+            .state('main.dashboard', {
+                url: '/dashboard',
+                templateUrl: 'modules/dashboard/dashboard.template.html',
+                controller: "dashboardCtrl",
+                resolve: {
+                    dashboard: function ($ocLazyLoad) {
+                        return $ocLazyLoad.load(
+                            {
+                                name: 'dashboardModule',
+                                files: ['modules/dashboard/dashboard.controller.js']
+                            }
+                        )
+                    }
+                }
+            })
+            // 404
+            .state('404', {
+                url: '/404',
+                templateUrl: 'modules/404/404.template.html'
+            })
+    }]);

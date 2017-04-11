@@ -1,4 +1,4 @@
-angular.module("categoryModule", ["headerModule", "footerModule", "Filters"])
+angular.module("categoryModule", ["footerModule", "Filters"])
 	.controller("categoryCtrl", ["$scope", function ($scope) {
 		console.log("category controller");
 

@@ -1,8 +1,7 @@
 <link rel="stylesheet" href="modules/home/home.css" />
 <link rel="stylesheet" href="../../bower_components/font-awesome-4.7.0/css/font-awesome.min.css" />
-<!-- header -->
-<include path="modules/header/header.template.html"></include>
-<!-- end header -->
+
+
 <div id="Carousel" class="carousel slide carousel-fade">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -46,7 +45,7 @@
     <div class="row" ng-if="stores.length">
         <div class="col-lg-2" style="padding-left: 0;" ng-repeat="item in stores | limitTo: 12">
             <div class="thumbnail store-thumbnail">
-                <a href="/store/{{ item.url }}" title="{{ item.title }}">
+                <a href="#/store/{{ item.url }}" title="{{ item.title }}">
                     <img ng-src="{{ item.image }}" alt="{{ item.title }}" title="{{ item.title }}">
                 </a>
             </div>

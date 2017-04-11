@@ -1,5 +1,5 @@
 angular
-    .module("categoryinfoModule", ["headerModule"])
+    .module("categoryinfoModule", [])
     .controller("categoryinfoCtrl", ["$scope", function ($scope) {
         console.log("categoryinfoCtrl")
     }]);

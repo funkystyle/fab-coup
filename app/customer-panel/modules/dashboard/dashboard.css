@@ -1,0 +1,51 @@
+.main-fluid {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.user-profile {
+    background: transparent;
+    border: 0px solid #FFFFFF;
+    border-bottom: 1px solid #DDDDDD;
+}
+.user-profile h5 a {
+    color: #165ba8;
+}
+
+/* ----- tab pane ---- */
+.tab-pane h1 {
+    margin-bottom: 20px;
+}
+/* ----- tab pane ---- */
+/* coupons, deals */
+.deal-price {
+    position: relative;
+    border: 1px solid #9954bb;
+    min-height: 100px;
+    width: 100%;
+    border-radius: 1px;
+    max-width: 110px;
+    max-height: 100px;
+}
+.deal-price h4 {
+    line-height: 27px;
+}
+.deal-price .deal {
+    position: absolute;
+    bottom: 0;
+    background-color: #9954bb;
+    min-height: 25px;
+    width: 100%;
+    color: #FFFFFF;
+    line-height: 25px;
+}
+.coupon-heading span i {
+    color: #898989;
+    font-size: 20px;
+    cursor: pointer;
+}
+.coupon-footer {
+    line-height: 40px;
+    padding: 0 0 0 15px;
+    cursor: pointer;
+}
+/* ----- coupons, deals ----- */

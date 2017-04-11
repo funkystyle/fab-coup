@@ -1,5 +1,5 @@
 angular
-    .module("storeinfoModule", ["headerModule", "footerModule", "storeServiceModule"])
+    .module("storeinfoModule", ["footerModule", "storeServiceModule"])
     .controller("storeinfoController", ["$scope", "$stateParams", "storeService", function ($scope, $stateParams, storeService) {
         $scope.favorite = {
             favorite: false

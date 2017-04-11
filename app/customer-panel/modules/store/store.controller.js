@@ -1,5 +1,5 @@
 angular
-    .module("storeModule", ["headerModule", "storeServiceModule"])
+    .module("storeModule", ["storeServiceModule"])
     .controller("storeCtrl", ["$scope", function ($scope) {
         $scope.sorting = {
             sorting: "#"

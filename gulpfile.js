@@ -1,5 +1,6 @@
 var gulp = require("gulp"),
     browserSync = require('browser-sync').create(),
+    ngAnnotate = require('gulp-ng-annotate'),
     minifyCSS = require("gulp-clean-css"),
     minifyJs = require("gulp-uglify"),
     concat = require("gulp-concat"),
@@ -14,54 +15,62 @@ gulp.task('browser-sync', function() {
     });
 });
 
-// browser syncing
-gulp.task('AdminSync', function() {
-    // Start the server
-    browserSync.init({
-        server: "app/Admin-Panel"
+// browser sync from dist folder
+gulp
+    .task("distSync", function() {
+        browserSync.init({
+            server: "dist/customer-panel"
+        })
     });
-});
 
-// minifying css fails function
-gulp.task("minifiCSS", function() {
-	// minifying css files using "gulp-clean-css"
-	gulp.src('app/customer-panel/modules/*/*.css')
-    .pipe(minifyCSS({compatibility: 'ie8'}))
-	.pipe(gulp.dest('dist/customer-panel/modules'));
-});
-// minifying JS files
-gulp.task('compress', function () {
-    gulp.src(['app/customer-panel/modules/*/*.js'])
-    .pipe(minifyJs())
-    .pipe(gulp.dest('dist/customer-panel/modules'));
-
-    // minify APP.js file and constant file
-    gulp.src(['app/customer-panel/modules/*.js'])
-    .pipe(minifyJs())
-    .pipe(gulp.dest('dist/customer-panel/modules'));
-});
-
+// ---- Minify html files ----
 gulp.task('minify_html', function() {
     gulp.src(['app/customer-panel/modules/*/*.html'])
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist/customer-panel/modules'));
-    // minify index.html file
-    gulp.src('app/customer-panel/index.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('dist/customer-panel'));
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('dist/customer-panel/modules'));
+
+    gulp.src(['app/customer-panel/*html'])
+        .pipe(htmlmin({ collapseWhitespace: true }))
+        .pipe(gulp.dest('dist/customer-panel'));
+});
+
+
+// ---- Minify CSS files ----
+gulp.task("minify_css", function() {
+    // minifying css files using "gulp-clean-css"
+    gulp.src(['app/customer-panel/modules/*/*/*.css', 'app/customer-panel/modules/*/*.css'])
+        .pipe(minifyCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('dist/customer-panel/modules'));
+});
+// minifying JS files
+gulp.task('minify_js', function() {
+    gulp.src(['app/customer-panel/modules/*/*.js', 'app/customer-panel/modules/*.js'])
+        .pipe(ngAnnotate())
+        .pipe(minifyJs())
+        .pipe(gulp.dest('dist/customer-panel/modules'));
 });
 
 // watching static files 
-gulp.task('watch', function(){
-	// watching the css files and then minifying 
-  	gulp.watch('app/customer-panel/modules/*/*.css').on("change", browserSync.reload);
+gulp.task('watch', function() {
+    // watching HTML files and then minifying
+    gulp.watch(['app/customer-panel/modules/*/*.html', 'app/customer-panel/*html'], function() {
+        gulp.run("minify_html", browserSync.reload);
+    });
 
-  	// watching js files and then minifying
-  	gulp.watch(["app/customer-panel/modules/*/*.js"]).on("change", browserSync.reload)
-  	// Other watchers for live realoding the application
-    gulp.watch(['app/customer-panel/modules/*/*.html']).on("change", browserSync.reload);
-})
+    // watching JS files and then minifying
+    gulp.watch([
+        'app/customer-panel/modules/*/*.js',
+        'app/customer-panel/modules/*.js'
+    ], function() {
+        gulp.run("minify_js", browserSync.reload);
+    });
+
+    // watching CSS files and then minifying
+    gulp.watch(['app/customer-panel/modules/*/*/*.css', 'app/customer-panel/modules/*/*.css'], function() {
+        gulp.run("minify_css", browserSync.reload);
+    });
+});
 
 gulp.task("default", ['browser-sync', 'watch']);
 
-gulp.task("admin", ["AdminSync"])
+gulp.task("dist", ["distSync", "watch", "minify_html", "minify_css", "minify_js"]);

@@ -1,0 +1,1 @@
+angular.module("loginModule",["constantModule"]).controller("loginCtrl",["$scope","$http","URL",function(o,n,l){console.log("login controller"),o.login={},o.loginNow=function(o){n({url:l.login,method:"POST",data:o}).then(function(o){console.log(o.data)},function(o){console.log("error")})}}]);

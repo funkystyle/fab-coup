@@ -1,56 +1,38 @@
-<link rel="stylesheet" href="modules/category/category.css"/>
+<link rel="stylesheet" href="modules/category/category.css" />
 <div class="container container-body">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3 style="margin-bottom: 20px;color:#7e70a1;">Popular Stores</h3>
+            <h3 style="margin-bottom: 20px;">Popular Stores</h3>
         </div>
     </div>
     <div class="row main-popular-grids">
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="item in [1,2,3,4]">
+            <div class="thumbnail" style="position: relative;">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
+                <div class="overlay-on-image text-center">
+                    <h4>
+                        Furniture
+                    </h4>
+                </div>
+            </div>
             <div class="well social-well">
                 <h4 class="text-center">Baby&Kids(12)</h4>
             </div>
         </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-                <h4 class="text-center">Furniture(16)</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-                <h4 class="text-center">Recharge(2)</h4>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-            <a class="" href="">
-                <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
-            <div class="well social-well">
-                <h4 class="text-center">Food(12)</h4>
-            </div>
-        </div>
+        <!-- end col -->
     </div>
+    <!-- end row -->
 
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
-            <h3 style="margin-bottom: 20px;color:#7e70a1;">All Stores</h3>
+            <h3 style="margin-bottom: 20px;">All Stores</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <div class="order-list-alpha">
                 <ul>
-                    <li ng-repeat="(key, val) in categoryAlphabet" ng-class="{'opacity-5': !val.array.length}"
-                        ng-click="setSortkey(key, val)">
+                    <li ng-repeat="(key, val) in categoryAlphabet" ng-class="{'opacity-5': !val.array.length}" ng-click="setSortkey(key, val)">
                         {{ key }}
                     </li>
                     <div style="clear:both;"></div>
@@ -59,15 +41,23 @@
         </div>
     </div>
     <div class="row main-popular-grids" style="margin-top:30px;">
-        <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="item in categoryAlphabet[sorting.sorting].array">
-            <a class="" href="">
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb" ng-repeat="item in categoryAlphabet[sorting.sorting].array | orderBy: 'name'">
+            <div class="thumbnail" style="position: relative;">
                 <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-            </a>
+                <div class="overlay-on-image text-center">
+                    <h4>
+                        Furniture
+                    </h4>
+                </div>
+            </div>
+            <!-- end thumbnail -->
             <div class="well social-well">
                 <h4 class="text-center">{{ item.name }} ({{ item.count }})</h4>
             </div>
         </div>
+        <!-- end col -->
     </div>
+    <!-- end row -->
 
     <div class="row" style="margin:30px 0px;">
         <div class="col-lg-12 col-md-12">

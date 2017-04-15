@@ -2,20 +2,27 @@
     background-color: #2f1231;
     color: #FFFFFF;
 }
-.navbar, .navbar-default .navbar-nav>.open>a,
-.navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus, .navbar-nav>li>a {
+
+.navbar,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.open>a:hover,
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-nav>li>a {
     background-color: #7e70a1 !important;
     color: #fff;
     border-bottom: 0 solid;
 }
+
 .header-nav-content {
     color: #fff !important;
     font-size: 25px;
     line-height: 50px;
 }
+
 .header-nav-content:hover {
     text-decoration: none;
 }
+
 .row2 {
     padding: 20px 0;
 }
@@ -41,7 +48,8 @@
     cursor: pointer;
 }
 
-.cart-button, .cart-button:hover {
+.cart-button,
+.cart-button:hover {
     background-color: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .23), inset 1px 1px 0 0 hsla(0, 0%, 100%, .2);
     padding: 7px 0;
@@ -57,7 +65,7 @@
     outline: none;
 }
 
-.cart-button:hover{
+.cart-button:hover {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
@@ -147,7 +155,7 @@
     line-height: 23px;
 }
 
-.profile-li{
+.profile-li {
     padding-top: 2px;
 }
 
@@ -155,16 +163,16 @@
     display: none;
 }
 
-.smallnav{
+.smallnav {
     display: block;
 }
 
-.smallsearch{
+.smallsearch {
     margin-left: 15px;
     margin-top: 15px;
 }
 
-.menu{
+.menu {
     cursor: pointer;
 }
 
@@ -175,15 +183,17 @@
     .largenav a img {
         margin-top: -20px;
     }
-    .smallnav{
+    .smallnav {
         display: none;
     }
-    .smallsearch{
+    .smallsearch {
         margin: 0px;
     }
 }
 
+
 /*Sidenav*/
+
 .sidenav {
     height: 100%;
     width: 0;
@@ -206,48 +216,65 @@
     display: block;
     transition: 0.3s
 }
+
 .navbar {
     margin-bottom: 0;
 }
+
 .top-store-ul {
     width: 600px !important;
 }
+
 .top-store-ul .row .col-lg-4 li {
     padding: 7px 15px;
 }
+
 .top-store-ul .row .col-lg-4 li a {
     color: #333;
 }
-.btn.dropdown-toggle ~ .dropdown-menu,
+
+.btn.dropdown-toggle~.dropdown-menu,
 ul.nav li.dropdown ul.dropdown-menu {
     background-color: rgb(244, 244, 244);
-	background-color: rgb(255, 255, 255);
-	border: 0 solid rgb(66, 133, 244);
-	box-shadow: 0px 0px 3px rgba(25, 25, 25, 0.3);
-	top: 51px;
-	margin: 0px;
+    background-color: rgb(255, 255, 255);
+    border: 0 solid rgb(66, 133, 244);
+    box-shadow: 0px 0px 3px rgba(25, 25, 25, 0.3);
+    top: 51px;
+    margin: 0px;
     padding: 0px;
 }
+
 ul.nav li.dropdown ul.dropdown-menu {
     position: absolute;
     width: 100%;
 }
 
+
 /* ---- custome popup template css for typeahead ----- */
+
 .custom-popup-wrapper {
     position: absolute;
     top: 100%;
+    overflow-y: scroll;
+    height: 400px;
+    overflow-x: hidden;
+    max-height: 400px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
     left: 0;
     z-index: 1000;
     display: none;
+    width: 600px;
     background-color: #f9f9f9;
 }
-.custom-popup-wrapper > .message {
+
+.custom-popup-wrapper>.message {
     padding: 10px 20px;
     border-bottom: 1px solid #ddd;
     color: #868686;
 }
-.custom-popup-wrapper > .dropdown-menu {
+
+.custom-popup-wrapper>.dropdown-menu {
     position: static;
     float: none;
     display: block;
@@ -257,10 +284,42 @@ ul.nav li.dropdown ul.dropdown-menu {
     border-radius: 0;
     box-shadow: none;
 }
+
+
 /* ---- end of custom template css for typeahead ----- */
 
 @media (min-width: 768px) {
     ul.nav li.dropdown ul.dropdown-menu {
         width: auto;
+    }
+}
+
+.uib-typeahead-match {
+    background-color: #FFFFFF;
+    color: #333333;
+    cursor: pointer;
+}
+
+.typeahead-ul li.active {
+    background-color: #3f639e;
+    color: #FFFFFF;
+}
+
+
+/*   ====================== for mobile view =====================*/
+
+@media screen and (max-width: 600px) {
+    .largenav {
+        display: block;
+        margin-left: 10px;
+    }
+    .on-mobile {
+        display: block;
+    }
+    .on-desktop {
+        display: none;
+    }
+    .custom-popup-wrapper {
+        width: 292px;
     }
 }

@@ -40,12 +40,12 @@
 <!-- popular stores -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 pad-0 margin-20">
+        <div class="col-lg-12 margin-20">
             <h3 class="store-heading">Popular Stores</h3>
         </div>
     </div>
     <div class="row" ng-if="stores.length">
-        <div class="col-lg-2" style="padding-left: 0;" ng-repeat="item in stores | limitTo: 12">
+        <div class="col-lg-2 col-xs-6" ng-repeat="item in stores | limitTo: 12">
             <div class="thumbnail store-thumbnail">
                 <a href="#/store/{{ item.url }}" title="{{ item.title }}">
                     <img ng-src="{{ item.image }}" alt="{{ item.title }}" title="{{ item.title }}">
@@ -57,12 +57,12 @@
 <!-- end ofpopular stores -->
 
 <!-- coupons by category wise -->
-<div class="container">
+<div class="container category-wise-home">
     <div class="row">
-        <div class="col-lg-12 col-sm-12 col-md-12 pad-left-0">
+        <div class="col-lg-12 col-sm-12 col-md-12  ">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h2 class="text-center">
+                    <h2 class="text-center" style="margin-top: 10.5px;">
                         Most Used Coupons &nbsp;| &nbsp; Recently Used Coupons &nbsp;| &nbsp;Top coupons &nbsp;| &nbsp;Last Minute Deals
                     </h2>
                 </div>
@@ -76,7 +76,7 @@
 <div class="container">
     <!-- coupons div starts here -->
     <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 pad-left-0" ng-repeat="item in stores | limitTo: 6">
+        <div class="col-lg-6 col-md-6 col-sm-12  " ng-repeat="item in stores | limitTo: 6">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <div class="row">
@@ -104,7 +104,7 @@
                         <div class="col-lg-3 col-md-3 col-sm-3">
                             <a href="">Verified</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 pad-0">
+                        <div class="col-lg-6 col-md-6 col-sm-6  ">
                             <button class="btn btn-md btn-info btn-block">Show all Offers</button>
                         </div>
                     </div>
@@ -120,7 +120,7 @@
 <!-- Top deal of the week start Here -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 pad-left-0 text-center">
+        <div class="col-lg-12   text-center">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h3>Top Deal of the Week</h3>
@@ -131,7 +131,7 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0" ng-repeat="item in stores | limitTo: 8">
+        <div class="col-lg-3 col-sm-12 col-md-3  " ng-repeat="item in stores | limitTo: 8">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h4><b>Plosh heels @ 50 OFF</b></h4>
@@ -145,7 +145,7 @@
                             <strike>Rs. {{ ($index + 2) * 200 }}</strike> &nbsp; &nbsp;
                             <a href="">Rs. {{($index + 1) * 150}}</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 pad-left-0 text-right">
+                        <div class="col-lg-6 col-md-6 col-sm-6   text-right">
                             View Offers
                         </div>
                     </div>
@@ -164,7 +164,7 @@
 <!-- more top stores starts here -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 pad-left-0 text-center">
+        <div class="col-lg-12   text-center">
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h3>More Top Stores</h3>
@@ -176,7 +176,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0">
+        <div class="col-lg-3 col-sm-12 col-md-3  ">
             <ul class="unstyled">
                 <li><a href="#">Apparel</a></li>
                 <li><a href="#">Personal Care</a></li>
@@ -184,7 +184,7 @@
                 <li><a href="#">Education</a></li>
             </ul>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0">
+        <div class="col-lg-3 col-sm-12 col-md-3  ">
             <ul class="unstyled">
                 <li><a href="#">Accessories</a></li>
                 <li><a href="#">Books</a></li>
@@ -192,7 +192,7 @@
                 <li><a href="#">Training</a></li>
             </ul>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0">
+        <div class="col-lg-3 col-sm-12 col-md-3  ">
             <ul class="unstyled">
                 <li><a href="#">Entertainment</a></li>
                 <li><a href="#">Beverage</a></li>
@@ -200,7 +200,7 @@
                 <li><a href="#">Electronics</a></li>
             </ul>
         </div>
-        <div class="col-lg-3 col-sm-12 col-md-3 pad-left-0">
+        <div class="col-lg-3 col-sm-12 col-md-3  ">
             <ul class="unstyled">
                 <li><a href="#">Atomotive</a></li>
                 <li><a href="#">Business</a></li>

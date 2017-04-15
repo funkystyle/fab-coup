@@ -1,39 +1,41 @@
 <link rel="stylesheet" href="modules/home/home.css" />
 <link rel="stylesheet" href="../../bower_components/font-awesome-4.7.0/css/font-awesome.min.css" />
 
-
-<div id="Carousel" class="carousel slide carousel-fade">
-    <!-- Indicators -->
+<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
     </ol>
-    <div class="carousel-inner">
-        <div class="item active">
-            <a href="">
-                <img src="http://newlifewebdevelopment.com/wp-content/uploads/2016/08/Website-Design.jpg" class="img-responsive">
-            </a>
+    <!-- Carousel items -->
+    <div class="carousel-inner carousel-zoom">
+        <div class="active item"><img class="img-responsive" src="http://www.seigospace.com/images/home/seigospace_logo_branding_jalandhar.jpg">
+            <div class="carousel-caption">
+                <!--<h2>Title</h2>
+                <p>Description</p>-->
+            </div>
         </div>
-        <div class="item">
-            <a href="">
-                <img src="https://s-media-cache-ak0.pinimg.com/originals/48/81/67/488167b4b034e25bba524d1ab7616a03.jpg" class="img-responsive">
-            </a>
+        <div class="item"><img class="img-responsive" src="https://s3-us-west-2.amazonaws.com/paytm-travel/Marketing/1200x400_BUSNEW120-compressed+(1).jpg">
+            <div class="carousel-caption">
+                <!--<h2>Title</h2>
+                <p>Description</p>-->
+            </div>
         </div>
-        <div class="item">
-            <a href="">
-                <img src="https://res.cloudinary.com/robot/image/upload/v1484814034/bbhersc0pjcbwnsbpqrm.jpg" class="img-responsive">
-            </a>
+        <div class="item"><img class="img-responsive" src="http://emavericks.in/wp-content/uploads/2015/12/Banners-1200x400_issue-1-02.jpg">
+            <div class="carousel-caption">
+                <!--<h2>Title</h2>
+                <p>Description</p>-->
+            </div>
         </div>
     </div>
-    <!-- Controls -->
-    <a class="left carousel-control" data-target="#carousel-example-generic" data-slide="prev">
+    <!-- Carousel nav -->
+    <a class="left carousel-control" data-target="#carousel" data-slide="prev">
         <span class="fa fa-angle-left"></span>
     </a>
-    <a class="right carousel-control" data-target="#carousel-example-generic" data-slide="next">
+    <a class="right carousel-control" data-target="#carousel" data-slide="next">
         <span class="fa fa-angle-right"></span>
     </a>
-</div> <!-- end carousel -->
+</div>
 
 <!-- popular stores -->
 <div class="container">
@@ -82,7 +84,7 @@
                             <img style="max-height: 50px;" src="https://fabpromocodes.in/wp-content/uploads/2016/02/olacabs-150x60.png" alt="">
                         </div>
                         <div class="col-lg-3 col-sm-3 col-md-3 pull-right">
-                           <h4 style="font-weight: bold;" class="text-right">RS.{{ $index +1 }}00 OFF</h4>
+                            <h4 style="font-weight: bold;" class="text-right">RS.{{ $index +1 }}00 OFF</h4>
                         </div>
                     </div>
                 </div>
@@ -90,7 +92,7 @@
                     <p style="min-height: 40px;">FLIGHT SUPER SAVER SALE - {{ item.title }}</p>
                     <div class="row">
                         <div class="col-lg-3 col-sm-3 col-md-3 pull-right">
-                           <p class="desc-p pull-right">Show All Offers</p>
+                            <p class="desc-p pull-right">Show All Offers</p>
                         </div>
                     </div>
                 </div>
@@ -106,7 +108,7 @@
                             <button class="btn btn-md btn-info btn-block">Show all Offers</button>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
@@ -133,7 +135,7 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h4><b>Plosh heels @ 50 OFF</b></h4>
-                    
+
                     <div class="thumbnail border-0">
                         <img class="top-deal-img" src="http://heels.jp/pic/louboutin/256_christianlouboutin-ladypeep-1120200_M196_1_1200x1200.jpg" alt="">
                     </div>

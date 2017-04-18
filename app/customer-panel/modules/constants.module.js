@@ -10,4 +10,21 @@ angular.module("constantModule", [])
         emailActivation: "/api/1.0/auth/email-activation",
 
         store: "modules/JSON/store.json"
+    })
+    .directive('onlyDigits', function() {
+        return {
+            restrict: 'A',
+            require: '?ngModel',
+            link: function(scope, element, attrs, modelCtrl) {
+                modelCtrl.$parsers.push(function(inputValue) {
+                    if (inputValue == undefined) return '';
+                    var transformedInput = inputValue.replace(/[^0-9]/g, '');
+                    if (transformedInput !== inputValue) {
+                        modelCtrl.$setViewValue(transformedInput);
+                        modelCtrl.$render();
+                    }
+                    return transformedInput;
+                });
+            }
+        };
     });

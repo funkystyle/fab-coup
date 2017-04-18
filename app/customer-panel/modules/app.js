@@ -1,12 +1,4 @@
 angular.module('APP', ['ui.router', 'oc.lazyLoad'])
-    .directive("include", [function() {
-        return {
-            restrict: "E",
-            templateUrl: function(ele, attrs) {
-                return attrs.path;
-            }
-        }
-    }])
     .run(["$rootScope", function($rootScope) {
         $rootScope.$on('$stateChangeSuccess', function() {
             document.body.scrollTop = document.documentElement.scrollTop = 0;

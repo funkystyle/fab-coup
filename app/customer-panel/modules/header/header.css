@@ -301,8 +301,8 @@ ul.nav li.dropdown ul.dropdown-menu {
 }
 
 .typeahead-ul li.active {
-    background-color: #3f639e;
-    color: #FFFFFF;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 

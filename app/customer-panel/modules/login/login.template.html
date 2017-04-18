@@ -30,7 +30,7 @@
                     </div>
                     <span class="or">OR</span>
                 </div>
-                <form class="form-signin" action="#">
+                <form class="form-signin" ng-submit="loginNow()">
                     <div class="form-group">
                         <label>EMAIL</label>
                         <input type="text" class="form-control" placeholder="EMAIL" required autofocus />
@@ -50,6 +50,7 @@
         </div>
         <!-- end col -->
         <div class="col-md-4 col-md-offset-2 border-col">
+            <!-- register starts here -->
             <div class="account-box">
                 <h2 class="text-center">Sign Up</h2>
                 <hr />
@@ -68,28 +69,32 @@
                     </div>
                     <span class="or">OR</span>
                 </div>
-                <form class="form-signin" action="#">
+                <form class="form-signin" ng-submit="registerNow(register)">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <label>NAME (Optional)</label>
-                                <input type="text" class="form-control" placeholder="NAME" />
+                                <label>FIRST NAME</label>
+                                <input type="text" class="form-control" placeholder="NAME" required ng-model="register.first_name" />
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="form-group">
-                                <label>PHONE NUMBER</label>
-                                <input type="text" class="form-control" placeholder="PHONE NUMBER" required autofocus />
+                                <label>LAST NAME</label>
+                                <input type="text" class="form-control" placeholder="LAST NAME" required ng-model="register.last_name" />
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>EMAIL</label>
-                        <input type="email" class="form-control" placeholder="EMAIL" required />
+                        <input type="email" class="form-control" placeholder="EMAIL" required ng-model="register.email" />
+                    </div>
+                    <div class="form-group">
+                        <label>PHONE NUMBER</label>
+                        <input type="text" class="form-control" placeholder="PHONE NUMBER" required ng-model="register.mobile_number" />
                     </div>
                     <div class="form-group">
                         <label>PASSWORD</label>
-                        <input type="password" class="form-control" placeholder="MINIMUM OF 6 CHARACTERS" required />
+                        <input type="password" class="form-control" placeholder="MINIMUM OF 6 CHARACTERS" required ng-model="register.password" />
                     </div>
                     <button class="btn btn-md btn-block btn-facebook" type="submit">
                         SIGN UP NOW

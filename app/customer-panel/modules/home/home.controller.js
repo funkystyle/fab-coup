@@ -5,6 +5,8 @@ angular.module('homeModule', ["headerModule", "storeServiceModule", "footerModul
             interval: 4000,
             pause: true
         });
+
+        console.log("home controller!");
         // get the list of stores from the storeService.get() method
         $scope.stores = [];
         storeService.get().then(function (data) {

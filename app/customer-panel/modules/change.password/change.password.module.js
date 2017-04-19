@@ -3,7 +3,7 @@ angular.module("changePasswordModule", ["constantModule"])
 		$scope.change = {};
 		$scope.message = {};
 
-
+		console.log("changePasswordModule")
 		$scope.changePassword = function (obj) {
 			$scope.message = {};
 

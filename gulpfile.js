@@ -71,6 +71,6 @@ gulp.task('watch', function() {
     });
 });
 
-gulp.task("default", ['browser-sync', 'watch']);
+gulp.task("default", ['browser-sync', 'watch', "minify_html", "minify_css", "minify_js"]);
 
 gulp.task("dist", ["distSync", "watch", "minify_html", "minify_css", "minify_js"]);

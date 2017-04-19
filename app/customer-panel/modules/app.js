@@ -94,6 +94,32 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                         }
                     }
                 })
+                .state('main.forgot_password', {
+                    url: '/forgot-password',
+                    templateUrl: 'modules/forgot.password/forgot.password.template.html',
+                    controller: "forgotPasswordCtrl",
+                    resolve: {
+                        forgotPassword: function($ocLazyLoad) {
+                            return $ocLazyLoad.load({
+                                name: 'forgotPasswordModule',
+                                files: ['modules/forgot.password/forgot.password.module.js']
+                            })
+                        }
+                    }
+                })
+                .state('main.change_password', {
+                    url: '/change-password',
+                    templateUrl: 'modules/change.password/change.password.template.html',
+                    controller: "changePasswordCtrl",
+                    resolve: {
+                        changePassword: function($ocLazyLoad) {
+                            return $ocLazyLoad.load({
+                                name: 'changePasswordModule',
+                                files: ['modules/change.password/change.password.module.js']
+                            })
+                        }
+                    }
+                })
                 // store state
                 .state('main.store', {
                     url: '/stores',

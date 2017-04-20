@@ -1,8 +1,8 @@
 <div class="custom-popup-wrapper" ng-style="{top: position().top+'px', left: position().left+'px'}" style="display: block;" ng-show="isOpen() && !moveInProgress" aria-hidden="{{!isOpen()}}">
-    <p class="message">select location from drop down.</p>
+    <p class="message">Select Stores/Coupons</p>
 
     <ul class="dropdown-menu typeahead-ul" role="listbox">
-        <li style="padding: 15px;" class="uib-typeahead-match" ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }" ng-mouseenter="selectActive($index)" ng-click="selectMatch($index)" role="option" id="{{::match.id}}">
+        <li class="uib-typeahead-match" ng-repeat="match in matches track by $index" ng-class="{active: isActive($index) }" ng-mouseenter="selectActive($index)" ng-click="selectMatch($index)" role="option" id="{{::match.id}}">
             <div class="row">
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                     <div class="thumbnail" style="margin-bottom: 0;">
@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                    <h4>
+                    <h4 class="font_style">
                         {{ match.label }}
                     </h4>
                 </div>

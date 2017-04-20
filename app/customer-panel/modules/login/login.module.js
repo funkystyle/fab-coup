@@ -2,7 +2,6 @@ angular.module("loginModule", ["constantModule"])
     .controller("loginCtrl", function($scope, $http, URL, mainURL, $state) {
         // Declaring variables
 
-        console.log("login controller");
         $scope.login = {};
         $scope.show = {
             login: false,

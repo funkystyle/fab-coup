@@ -107,6 +107,22 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                         }
                     }
                 })
+
+                // activate email link
+                .state('main.activate', {
+                    url: '/email/activate/:userId/confirm/:tokenId',
+                    templateUrl: 'modules/activate.email/activate.email.template.html',
+                    controller: "activateEmailCtrl",
+                    resolve: {
+                        activateEmail: function($ocLazyLoad) {
+                            return $ocLazyLoad.load({
+                                name: 'activateEmailModule',
+                                files: ['modules/activate.email/activate.email.module.js']
+                            })
+                        }
+                    }
+                })
+                //  change password
                 .state('main.change_password', {
                     url: '/change-password',
                     templateUrl: 'modules/change.password/change.password.template.html',

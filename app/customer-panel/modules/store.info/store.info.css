@@ -15,6 +15,10 @@
     margin: 0px;
     padding: 10px;
 }
+.thumb{
+	border-right: 1px solid #ddd;
+	margin-top: 23px;"
+}
 .thumbnail img {
 	width: 100%;
 }
@@ -189,3 +193,29 @@ background: #428bca;
 	border-bottom: none !important;
 }
 /* end of coupons, deals */
+@media screen and (max-width: 768px) {
+	.thumb{
+	border-right:none;
+	margin-top: 0px;"
+	}
+	.breadcrumb {
+    padding: 0px 10px 0px 0px;
+    font-size: 11px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.thumbnail{
+		padding: 0px;
+	}
+	.para_small{
+		font-size: 13px;
+		text-align: justify;
+	}
+	.panel{
+		margin-bottom: 0;
+	}
+	.mar_top{
+		margin-top: -3%;
+	}
+}

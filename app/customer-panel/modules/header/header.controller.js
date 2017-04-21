@@ -4,12 +4,14 @@ angular.module("headerModule", ["ui.bootstrap", "APP"])
     	// declaring the scope variables
     	$scope.user = {};
     	
-    	// getting the current user information
-    	auth.me().then(function (data) {
-    		console.log(data)
-    	}, function (error) {
+    	if(auth.checkLogin()) {
+            // getting the current user information
+            auth.me().then(function (data) {
+                console.log(data)
+            }, function (error) {
 
-    	});
+            });
+        }
 
     	// logout
     	$scope.logout = function () {

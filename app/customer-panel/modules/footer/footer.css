@@ -54,3 +54,9 @@ ul.footer-unstyled li a, a{
     border-top: 1px solid #322b2b; padding: 30px 15px;
     margin-top: 30px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .app-icons {
+    font-size: 12px;
+  }  
+}

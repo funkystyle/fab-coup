@@ -37,6 +37,7 @@ body {
     background-color: #f3f3f3;
     font-family: OpenSans-regular;
     margin: 0 auto !important;
+    overflow-x: hidden;
 }
 
 h2,

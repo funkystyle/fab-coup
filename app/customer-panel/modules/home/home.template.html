@@ -45,7 +45,7 @@
         </div>
     </div>
     <div class="row" ng-if="stores.length">
-        <div class="col-lg-2 col-xs-6" ng-repeat="item in stores | limitTo: 12">
+        <div class="col-lg-2 col-xs-4" ng-repeat="item in stores | limitTo: 12">
             <div class="thumbnail store-thumbnail">
                 <a href="#/store/{{ item.url }}" title="{{ item.title }}">
                     <img ng-src="{{ item.image }}" alt="{{ item.title }}" title="{{ item.title }}">
@@ -62,9 +62,35 @@
         <div class="col-lg-12 col-sm-12 col-md-12  ">
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h2 class="text-center" style="margin-top: 10.5px;">
-                        Most Used Coupons &nbsp;| &nbsp; Recently Used Coupons &nbsp;| &nbsp;Top coupons &nbsp;| &nbsp;Last Minute Deals
-                    </h2>
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3">
+                          <div class="update-nag">
+                            <div class="update-split"><i class="glyphicon glyphicon-folder-open"></i></div>
+                            <div class="update-text">Most Used Coupons</div>
+                          </div>
+                        </div>
+                    
+                        <div class="col-md-3 col-lg-3">
+                          <div class="update-nag">
+                            <div class="update-split update-info"><i class="glyphicon glyphicon-folder-open"></i></div>
+                            <div class="update-text">Recently Used Coupons</div>
+                        </div>
+                        </div>
+
+                        <div class="col-md-3 col-lg-3">
+                          <div class="update-nag">
+                            <div class="update-split update-success"><i class="glyphicon glyphicon-folder-open"></i></div>
+                            <div class="update-text">Top coupons</div>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-lg-3">
+                          <div class="update-nag">
+                            <div class="update-split update-danger"><i class="glyphicon glyphicon-folder-open"></i></div>
+                            <div class="update-text">Last Minute Deals</div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,13 +124,13 @@
                 </div>
                 <div class="panel-footer">
                     <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 text-left">
+                        <div class="col-lg-4 col-md-4 col-sm-4 text-left col-xs-8 txt_small">
                             <a href="">Show Description</a>
                         </div>
-                        <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 txt_small">
                             <a href="">Verified</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 pad-right-0">
+                        <div class="col-lg-5 col-md-5 col-sm-5 pad-right-0 col-xs-12 btn_mobile">
                             <button class="btn btn-md btn-info btn-block">Show all Offers</button>
                         </div>
                     </div>
@@ -141,11 +167,11 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 pad-right-0">
+                        <div class="col-lg-6 col-md-6 col-sm-6 pad-right-0 col-xs-7">
                             <strike>Rs. {{ ($index + 2) * 200 }}</strike> &nbsp; &nbsp;
                             <a href="">Rs. {{($index + 1) * 150}}</a>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6   text-right">
+                        <div class="col-lg-6 col-md-6 col-sm-6   text-right col-xs-5">
                             View Offers
                         </div>
                     </div>

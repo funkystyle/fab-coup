@@ -1,5 +1,5 @@
 angular.module("loginModule", ["constantModule"])
-    .controller("loginCtrl", function($scope, $http, URL, mainURL, $state) {
+    .controller("loginCtrl", function($scope, $http, URL, mainURL, $state, $stateParams) {
         // Declaring variables
         $scope.login = {};
         $scope.show = {
@@ -23,7 +23,10 @@ angular.module("loginModule", ["constantModule"])
                 method: "POST",
                 data: login
             }).then(function(data) {
-                console.log(data.data);
+                if(data.data) {
+                    localStorage.setItem('token', data.data.data.login_token);
+                    $state.go("main.dashboard", $stateParams, {reload: true});
+                }
             }, function(error) {
                 console.log("error", error);
                 $scope.show.login = true;

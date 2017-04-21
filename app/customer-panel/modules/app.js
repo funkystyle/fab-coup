@@ -86,6 +86,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     templateUrl: 'modules/login/login.template.html',
                     controller: "loginCtrl",
                     resolve: {
+                        checkLogin: function (auth, $location) {
+                            if(auth.checkLogin()) {
+                                $location.path('/');
+                            }
+                        },
                         authentication: function($ocLazyLoad) {
                             return $ocLazyLoad.load({
                                 name: 'loginModule',
@@ -110,7 +115,7 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
 
                 // activate email link
                 .state('main.activate', {
-                    url: '/email/activate/:userId/confirm/:tokenId',
+                    url: '/email/activate/:user_id/confirm/:token',
                     templateUrl: 'modules/activate.email/activate.email.template.html',
                     controller: "activateEmailCtrl",
                     resolve: {
@@ -198,6 +203,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     templateUrl: 'modules/dashboard/dashboard.template.html',
                     controller: "dashboardCtrl",
                     resolve: {
+                        checkLogin: function (auth, $location) {
+                            if(!auth.checkLogin()) {
+                                $location.path('/login');
+                            }
+                        },
                         dashboard: function($ocLazyLoad) {
                             return $ocLazyLoad.load({
                                 name: 'dashboardModule',
@@ -212,4 +222,34 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     templateUrl: 'modules/404/404.template.html'
                 })
         }
-    ]);
+    ])
+    // it is for authentication
+    .factory('auth', function ($http, $q) {
+        return {
+            getToken: function () {
+                return localStorage.getItem('token');
+            },
+            setToken: function (token) {
+                return localStorage.setItem('token', token);
+            },
+            logout: function () {
+                localStorage.removeItem('token');
+            },
+            checkLogin: function () {
+                return (localStorage.getItem('token')) ? true : false;
+            },
+            me: function () {
+                var def = $q.defer();
+                $http({
+                    url: "http://54.213.22.144/api/1.0/auth/me",
+                    method: "GET"
+                }).then(function (data) {
+                    def.resolve(data.data);
+                }, function (error) {
+                    def.reject(error.data);
+                });
+
+                return def.promise;
+            }
+        }
+    });

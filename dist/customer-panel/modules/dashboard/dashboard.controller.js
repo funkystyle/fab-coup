@@ -1,1 +1,1 @@
-angular.module("dashboardModule",["headerModule"]).controller("dashboardCtrl",["$scope",function(o){console.log("dashboard controller!")}]);
+angular.module("dashboardModule",["headerModule","APP"]).controller("dashboardCtrl",["$scope","auth",function(o,e){console.log("dashboard controller!"),o.user={},e.me().then(function(o){console.log(o)},function(o){console.log(o.error)})}]);

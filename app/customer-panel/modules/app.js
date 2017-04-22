@@ -221,6 +221,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     url: '/404',
                     templateUrl: 'modules/404/404.template.html'
                 })
+                // blog.category
+                .state('blog_category', {
+                    url: '/blog/category',
+                    templateUrl: 'modules/blog.category/blog.category.template.html'
+                })
         }
     ])
     // it is for authentication

@@ -54,7 +54,7 @@
 	border-bottom: 0px solid #FFFFFF;
 }
 .nav-tabs>li>a, .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
-	border: 1px solid rgba(221, 221, 221, 0.29);
+	border: 1px solid rgba(221, 221, 221, 0.5);
 }
 .nav-tabs li a span {
 	margin-top: -5px;
@@ -192,6 +192,13 @@ background: #428bca;
 .tweets-div:last-child{
 	border-bottom: none !important;
 }
+.panel_pad{
+		padding:14px;
+}
+.ola_mar{
+	margin-bottom: 20px;
+}
+
 /* end of coupons, deals */
 @media screen and (max-width: 768px) {
 	.thumb{
@@ -203,7 +210,8 @@ background: #428bca;
     font-size: 11px;
 	}
 	h3{
-		font-size: 20px;
+		font-size: 19px;
+		font-weight: bold;
 	}
 	.thumbnail{
 		padding: 0px;
@@ -211,11 +219,59 @@ background: #428bca;
 	.para_small{
 		font-size: 13px;
 		text-align: justify;
+		line-height: 20px;
 	}
 	.panel{
 		margin-bottom: 0;
 	}
 	.mar_top{
 		margin-top: -3%;
+	}
+	.visit_store{
+		width:100%;
+	}
+	.panel_pad{
+		padding:15px 0px;
+	}
+	.pad-right-0 {
+     padding-right: 15px;
+	}
+	.pad_nav_left{
+		padding-left:0;
+	}
+	.pad_nav_right{
+		padding-right: 0;
+	}
+	.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 0px;
+    font-size: 13px;
+	}
+	.panel-body_fa {
+    padding: 17px 15px 0px;
+	}
+	.fifty_cashback{
+    	margin: 0 0 2% -6%;
+    	font-weight: bold;
+	}
+	.coupon-footer {
+		line-height: 20px;
+	}
+	.vari_pad{
+		padding-top: 2%;
+	}
+	.show_copan_code{
+		margin: 7% 0% 0%;
+	}
+	.ola_mar{
+		margin-bottom: 20px;
+		margin-left: 15px;
+	}
+	.table{
+		font-size: 12px;
+	}
+	h4{
+		font-size: 16px;
 	}
 }

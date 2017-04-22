@@ -38,7 +38,7 @@
 						{{ store.no_of_coupons }} Verified Coupons - {{ store.modified_date | date: "dd MMM yyyy" }}
 					</p>
 					<p>
-						<button class="btn btn-md pull-right btn-info">
+						<button class="btn btn-md pull-right btn-info visit_store">
 							Visit Store
 						</button>
 					</p>
@@ -59,20 +59,20 @@
 		</div> <!-- end col-lg-3 -->
 		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 mar_top">
 			<div class="panel panel-default">
-				<div class="panel-body" style="padding: 14px;">
+				<div class="panel-body panel_pad">
 					<!-- Nav tabs -->
 					<ul class="nav nav-tabs" role="tablist">
-						<li role="presentation" class="active col-lg-4 col-xs-4 pad-0 text-center">
+						<li role="presentation" class="active col-lg-4 col-xs-4 pad-0 text-center pad_nav_right">
 							<a href="" data-target="#all-tab" aria-controls="home" role="tab" data-toggle="tab">All &nbsp;
 								<span class="label label-info">40</span>
 							</a>
 						</li>
-						<li role="presentation" class="col-lg-4 pad-0 text-center col-xs-4">
+						<li role="presentation" class="col-lg-4 pad-0 text-center col-xs-4 pad_nav_right pad_nav_left">
 							<a href="" data-target="#deals-tab" aria-controls="profile" role="tab" data-toggle="tab">Deals&nbsp;
 								<span class="label label-primary">30</span>
 							</a>
 						</li>
-						<li role="presentation" class="col-lg-4 pad-0 text-center col-xs-4">
+						<li role="presentation" class="col-lg-4 pad-0 text-center col-xs-4 pad_nav_left">
 							<a href="" data-target="#coupons-tab" aria-controls="messages" role="tab" data-toggle="tab">
 								Coupons&nbsp;
 								<span class="label label-success">20</span>
@@ -206,18 +206,18 @@
 					<h5 class="font-bold">Ola Cabs Social</h5>
 				</div>
 				<!--panel heading-->
-				<div class="panel-body">
+				<div class="panel-body panel-body_fa">
 					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pad-right-0" style="margin-bottom: 20px;">
 							<img src="modules/assets/images/facebook.png" style="width: 90%;" />
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pad-right-0" style="margin-bottom: 20px;">
 							<img src="modules/assets/images/google-plus.png" style="width: 90%;" />
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 pad-right-0" style="margin-bottom: 20px;">
 							<img src="modules/assets/images/linkedin.png" style="width: 90%;" />
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-3 pad-right-0" style="margin-bottom: 20px;">
+						<div class="col-lg-3 col-md-3 col-sm-3  col-xs-3 pad-right-0" style="margin-bottom: 20px;">
 							<img src="modules/assets/images/twitter.png" style="width: 90%;" />
 						</div>
 					</div>
@@ -274,7 +274,7 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-2 col-md-2 col-sm-2">
-									<div class="deal-price text-center">
+									<div class="deal-price text-center hidden-xs">
 										<h4>
 											Rs. 1000
 											<br />
@@ -282,16 +282,23 @@
 										</h4>
 										<div class="deal">Deal</div>
 									</div> <!-- end deal-price -->
+									<div class="col-xs-12 hidden-lg hidden-md">
+									<p class="fifty_cashback">50% Cashback</p>
+									</div>
 								</div> <!-- end col -->
-								<div class="col-lg-10 col-md-10 col-sm-10">
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 									<h3 class="margin-top-0 coupon-heading">
 										Upto Rs. 30 Supercash everyday on Recharge
-										<span class="pull-right">
+										<span class="pull-right hidden-xs">
 											<i class="fa fa-star"></i>&nbsp;
 											<i class="fa fa-share-alt"></i>
 										</span>
 									</h3>
-									<p style="opacity: 0.6; line-height: 25px;">
+									<span class="pull-right col-xs-12 hidden-lg hidden-md pad_nav_left">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									<p style="opacity: 0.6; line-height: 25px;" class="para_small">
 										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
 										standard dummy text ever since the 1500s, 
 										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -307,21 +314,21 @@
 						</div> <!-- end panel body -->
 						<!--panel footer-->
 						<div class="panel-footer coupon-footer">
-							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="row vari_pad">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_right text-center">
 									<i class="fa fa-heart-o"></i> &nbsp;
-									Verified today
+									Verified
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left pad_nav_right text-center">
 									<i class="fa fa-comment-o"></i> &nbsp;
 									Comment
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left text-center">
 									<i class="fa fa-bug"></i> &nbsp;
-									Report Coupon
+									Report
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<button class="btn btn-md btn-block btn-info">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9  pull-right">
+									<button class="btn btn-md btn-block btn-info show_copan_code">
 										<span>Show Coupon Code</span>
 										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
 									</button>
@@ -333,15 +340,15 @@
 
 					<!-- promo codes starts here --> <!-- panel -->
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12">
-							<h3 style="margin-bottom: 20px;">Ola Promo Codes</h3>
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<h3 class="ola_mar">Ola Promo Codes</h3>
 						</div>
 					</div>
 					<div class="panel panel-default" ng-repeat="item in [1,2]">
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-lg-2 col-md-2 col-sm-2">
-									<div class="deal-price text-center">
+									<div class="deal-price text-center hidden-xs">
 										<h4>
 											Rs. 1000
 											<br />
@@ -349,16 +356,23 @@
 										</h4>
 										<div class="deal">Deal</div>
 									</div> <!-- end deal-price -->
+									<div class="col-xs-12 hidden-lg hidden-md">
+									<p class="fifty_cashback">50% Cashback</p>
+									</div>
 								</div> <!-- end col -->
-								<div class="col-lg-10 col-md-10 col-sm-10">
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 									<h3 class="margin-top-0 coupon-heading">
 										Upto Rs. 30 Supercash everyday on Recharge
-										<span class="pull-right">
+										<span class="pull-right hidden-xs">
 											<i class="fa fa-star"></i>&nbsp;
 											<i class="fa fa-share-alt"></i>
 										</span>
 									</h3>
-									<p style="opacity: 0.6; line-height: 25px;">
+									<span class="pull-right col-xs-12 hidden-lg hidden-md pad_nav_left">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									<p style="opacity: 0.6; line-height: 25px;" class="para_small">
 										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
 										standard dummy text ever since the 1500s, 
 										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -374,34 +388,35 @@
 						</div> <!-- end panel body -->
 						<!--panel footer-->
 						<div class="panel-footer coupon-footer">
-							<div class="row">
-								<div class="col-lg-3 col-md-3 col-sm-3">
+							<div class="row vari_pad">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_right text-center">
 									<i class="fa fa-heart-o"></i> &nbsp;
-									Verified today
+									Verified
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left pad_nav_right text-center">
 									<i class="fa fa-comment-o"></i> &nbsp;
 									Comment
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left text-center">
 									<i class="fa fa-bug"></i> &nbsp;
-									Report Coupon
+									Report
 								</div>
-								<div class="col-lg-3 col-md-3 col-sm-3">
-									<button class="btn btn-md btn-block btn-info">
-										Show Coupon Code
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9  pull-right">
+									<button class="btn btn-md btn-block btn-info show_copan_code">
+										<span>Show Coupon Code</span>
 										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
 									</button>
 								</div>
 							</div>
 						</div>
 						<!--end panel footer -->
-					</div><!-- end panel --><!-- end upto promo codes -->
+					</div><!-- end panel -->
+					<!-- end upto promo codes -->
 
 					<!-- Deals carousel starts here -->
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12">
-							<h3 style="margin-bottom: 20px;">
+							<h3  class="ola_mar">
 								Ola Deals
 							</h3>
 						</div><!-- end col -->
@@ -651,7 +666,7 @@
 				<!-- suggested coupons start here -->
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
-						<h3 style="margin-bottom: 20px;">
+						<h3 class="ola_mar">
 							Suggested Coupons
 						</h3>
 					</div><!-- end col -->
@@ -659,48 +674,73 @@
 
 				<div class="row">
 					<div class="col-lg-6 col-md-6" ng-repeat="suggested in [1,2]">
-						<div class="panel panel-default">
-							<div class="panel-body" style="padding-bottom: 0px;">
-								<div class="row">
-									<div class="col-lg-12 col-md-12">
-										<div class="row">
-											<div class="col-lg-6 col-md-6">
-												<h3 class="pull-left mar use-main-h">uber</h3>
-											</div>
-											<div class="col-lg-6 col-md-6">
-												<h3 class="pull-right mar use-main-h-font">Rs.50 OFF</h3>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-md-12">
-												<p class="mar con-para sugg-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-lg-12 col-md-12">
-												<a class="pull-right">See all UBER Offers</a>
-											</div>
-										</div>
-										<div class="panel-footer suggested-footer">
-											<div class="row">
-												<div class="col-lg-4 col-md-4 col-sm-4">
-													<div class="top-move-5"><a href="" class="font-13">Show Description</a></div>
-												</div>
-												<div class="col-lg-3 col-md-3 col-sm-3">
-													<div class="top-move-5"><i class="fa fa-check-square-o font-icon-co"></i>
-													<span class="font-13">Verified</span></div>
-												</div>
-												<div class="col-lg-5 col-md-5 col-sm-5 pad">
-													<button class="btn btn-md btn-block btn-info font-13">
-														Show Coupon Code
-													</button>
-												</div>
-											</div>
-										</div>
+						<div class="panel panel-default" ng-repeat="item in [1,2]">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2">
+									<div class="deal-price text-center hidden-xs">
+										<h4>
+											Rs. 1000
+											<br />
+											OFF
+										</h4>
+										<div class="deal">Deal</div>
+									</div> <!-- end deal-price -->
+									<div class="col-xs-12 hidden-lg hidden-md">
+									<p class="fifty_cashback">50% Cashback</p>
 									</div>
+								</div> <!-- end col -->
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+									<h3 class="margin-top-0 coupon-heading">
+										Upto Rs. 30 Supercash everyday on Recharge
+										<span class="pull-right hidden-xs">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									</h3>
+									<span class="pull-right col-xs-12 hidden-lg hidden-md pad_nav_left">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									<p style="opacity: 0.6; line-height: 25px;" class="para_small">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+										standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+										<span class="pull-right">
+											<a href="">Show More</a>
+										</span>
+									</p>
+									<p>
+										<a href="">See all Mobile Recharge Coupons</a>
+									</p>
+								</div>
+							</div> <!-- end row -->
+						</div> <!-- end panel body -->
+						<!--panel footer-->
+						<div class="panel-footer coupon-footer">
+							<div class="row vari_pad">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_right text-center">
+									<i class="fa fa-heart-o"></i> &nbsp;
+									Verified
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left pad_nav_right text-center">
+									<i class="fa fa-comment-o"></i> &nbsp;
+									Comment
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left text-center">
+									<i class="fa fa-bug"></i> &nbsp;
+									Report
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9  pull-right">
+									<button class="btn btn-md btn-block btn-info show_copan_code">
+										<span>Show Coupon Code</span>
+										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
+									</button>
 								</div>
 							</div>
 						</div>
+						<!--end panel footer -->
+					</div>
 					</div>
 				</div>
 				<!-- suggested coupons end here -->
@@ -708,141 +748,155 @@
 				<!-- Related Coupons start here -->
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
-						<h3 style="margin-bottom: 20px;">
+						<h3 class="ola_mar">
 							Related Coupons
 						</h3>
 					</div><!-- end col -->
 				</div><!-- end row -->
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-2 col-md-2 col-sm-2">
-								<div class="deal-price text-center">
-									<h4>
-										Rs. 1000
-										<br />
-										OFF
-									</h4>
-									<div class="deal">Deal</div>
-								</div> <!-- end deal-price -->
-							</div> <!-- end col -->
-							<div class="col-lg-10 col-md-10 col-sm-10">
-								<h3 class="margin-top-0 coupon-heading">
-									Upto Rs. 30 Supercash everyday on Recharge
-									<span class="pull-right">
-										<i class="fa fa-star"></i>&nbsp;
-										<i class="fa fa-share-alt"></i>
-									</span>
-								</h3>
-								<p style="opacity: 0.6; line-height: 25px;">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-									standard dummy text ever since the 1500s, 
-									when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-									<span class="pull-right">
-										<a href="">Show More</a>
-									</span>
-								</p>
-								<p>
-									<a href="">See all Mobile Recharge Coupons</a>
-								</p>
-							</div>
-						</div> <!-- end row -->
-					</div> <!-- end panel body -->
-					<!--panel footer-->
-					<div class="panel-footer coupon-footer">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-heart-o"></i> &nbsp;
-								Verified today
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-comment-o"></i> &nbsp;
-								Comment
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-bug"></i> &nbsp;
-								Report Coupon
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<button class="btn btn-md btn-block btn-info">
-									<span>Show Coupon Code</span>
-									<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
-								</button>
+					<div class="panel panel-default" ng-repeat="item in [1,2]">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2">
+									<div class="deal-price text-center hidden-xs">
+										<h4>
+											Rs. 1000
+											<br />
+											OFF
+										</h4>
+										<div class="deal">Deal</div>
+									</div> <!-- end deal-price -->
+									<div class="col-xs-12 hidden-lg hidden-md">
+									<p class="fifty_cashback">50% Cashback</p>
+									</div>
+								</div> <!-- end col -->
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+									<h3 class="margin-top-0 coupon-heading">
+										Upto Rs. 30 Supercash everyday on Recharge
+										<span class="pull-right hidden-xs">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									</h3>
+									<span class="pull-right col-xs-12 hidden-lg hidden-md pad_nav_left">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									<p style="opacity: 0.6; line-height: 25px;" class="para_small">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+										standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+										<span class="pull-right">
+											<a href="">Show More</a>
+										</span>
+									</p>
+									<p>
+										<a href="">See all Mobile Recharge Coupons</a>
+									</p>
+								</div>
+							</div> <!-- end row -->
+						</div> <!-- end panel body -->
+						<!--panel footer-->
+						<div class="panel-footer coupon-footer">
+							<div class="row vari_pad">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_right text-center">
+									<i class="fa fa-heart-o"></i> &nbsp;
+									Verified
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left pad_nav_right text-center">
+									<i class="fa fa-comment-o"></i> &nbsp;
+									Comment
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left text-center">
+									<i class="fa fa-bug"></i> &nbsp;
+									Report
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9  pull-right">
+									<button class="btn btn-md btn-block btn-info show_copan_code">
+										<span>Show Coupon Code</span>
+										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
+									</button>
+								</div>
 							</div>
 						</div>
+						<!--end panel footer -->
 					</div>
-					<!--end panel footer -->
-				</div>
 				<!-- Related Coupons ends here -->
 
 				<!-- Related Coupons start here -->
 				<div class="row">
 					<div class="col-lg-12 col-md-12 col-sm-12">
-						<h3 style="margin-bottom: 20px;">
+						<h3 class="ola_mar">
 							Expired Coupons
 						</h3>
 					</div><!-- end col -->
 				</div><!-- end row -->
-				<div class="panel panel-default">
-					<div class="panel-body">
-						<div class="row">
-							<div class="col-lg-2 col-md-2 col-sm-2">
-								<div class="deal-price text-center">
-									<h4>
-										Rs. 1000
-										<br />
-										OFF
-									</h4>
-									<div class="deal">Deal</div>
-								</div> <!-- end deal-price -->
-							</div> <!-- end col -->
-							<div class="col-lg-10 col-md-10 col-sm-10">
-								<h3 class="margin-top-0 coupon-heading">
-									Upto Rs. 30 Supercash everyday on Recharge
-									<span class="pull-right">
-										<i class="fa fa-star"></i>&nbsp;
-										<i class="fa fa-share-alt"></i>
-									</span>
-								</h3>
-								<p style="opacity: 0.6; line-height: 25px;">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-									standard dummy text ever since the 1500s, 
-									when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-									<span class="pull-right">
-										<a href="">Show More</a>
-									</span>
-								</p>
-								<p>
-									<a href="">See all Mobile Recharge Coupons</a>
-								</p>
-							</div>
-						</div> <!-- end row -->
-					</div> <!-- end panel body -->
-					<!--panel footer-->
-					<div class="panel-footer coupon-footer">
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-heart-o"></i> &nbsp;
-								Verified today
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-comment-o"></i> &nbsp;
-								Comment
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<i class="fa fa-bug"></i> &nbsp;
-								Report Coupon
-							</div>
-							<div class="col-lg-3 col-md-3 col-sm-3">
-								<button class="btn btn-md btn-block btn-info">
-									<span>Show Coupon Code</span>
-									<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
-								</button>
+				<div class="panel panel-default" ng-repeat="item in [1,2]">
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-2 col-md-2 col-sm-2">
+									<div class="deal-price text-center hidden-xs">
+										<h4>
+											Rs. 1000
+											<br />
+											OFF
+										</h4>
+										<div class="deal">Deal</div>
+									</div> <!-- end deal-price -->
+									<div class="col-xs-12 hidden-lg hidden-md">
+									<p class="fifty_cashback">50% Cashback</p>
+									</div>
+								</div> <!-- end col -->
+								<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
+									<h3 class="margin-top-0 coupon-heading">
+										Upto Rs. 30 Supercash everyday on Recharge
+										<span class="pull-right hidden-xs">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									</h3>
+									<span class="pull-right col-xs-12 hidden-lg hidden-md pad_nav_left">
+											<i class="fa fa-star"></i>&nbsp;
+											<i class="fa fa-share-alt"></i>
+										</span>
+									<p style="opacity: 0.6; line-height: 25px;" class="para_small">
+										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
+										standard dummy text ever since the 1500s, 
+										when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+										<span class="pull-right">
+											<a href="">Show More</a>
+										</span>
+									</p>
+									<p>
+										<a href="">See all Mobile Recharge Coupons</a>
+									</p>
+								</div>
+							</div> <!-- end row -->
+						</div> <!-- end panel body -->
+						<!--panel footer-->
+						<div class="panel-footer coupon-footer">
+							<div class="row vari_pad">
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_right text-center">
+									<i class="fa fa-heart-o"></i> &nbsp;
+									Verified
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left pad_nav_right text-center">
+									<i class="fa fa-comment-o"></i> &nbsp;
+									Comment
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 pad_nav_left text-center">
+									<i class="fa fa-bug"></i> &nbsp;
+									Report
+								</div>
+								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9  pull-right">
+									<button class="btn btn-md btn-block btn-info show_copan_code">
+										<span>Show Coupon Code</span>
+										<i class="pull-right fa fa-arrow-right" style="line-height: 20px;"></i>
+									</button>
+								</div>
 							</div>
 						</div>
+						<!--end panel footer -->
 					</div>
-					<!--end panel footer -->
-				</div>
 				<!-- Related Coupons ends here -->
 
 				<!-- about description start here -->
@@ -855,42 +909,41 @@
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-lg-12 col-md-12">
-								<table class="table table-bordered">
-								    <thead>
-								      <tr>
-								        <th>Swiggy Coupons for New/Old Users</th>
-								        <th>Offer</th>
-								      </tr>
-								    </thead>
-								    <tbody>
-								      <tr>
-								        <td>Swiggy New User Offer</td>
-								        <td>Upto Rs.150 Cashback</td>
-								      </tr>
-								      <tr>
-								        <td>Swiggy Paytm Offer</td>
-								        <td>Upto Rs.75 Cashback</td>
-								      </tr>
-								      <tr>
-								        <td>Swiggy Freecharge Offer</td>
-								        <td>Upto Rs.150 Cashback</td>
-								      </tr>
-								      <tr>
-								        <td>Banglore,Hyderabad,Mumbai,Pune,Delhi,Gurgoan,Kolkata & Chennai</td>
-								        <td>Upto Rs.150 Discount</td>
-								      </tr>
-								    </tbody>
-								  </table>
+							<div class="col-lg-12 col-md-12 col-xs-12">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+									    <thead>
+									      <tr>
+									        <th>Swiggy Coupons for New/Old Users</th>
+									        <th>Offer</th>
+									      </tr>
+									    </thead>
+									    <tbody>
+									      <tr>
+									        <td>Swiggy New User Offer</td>
+									        <td>Upto Rs.150 Cashback</td>
+									      </tr>
+									      <tr>
+									        <td>Swiggy Paytm Offer</td>
+									        <td>Upto Rs.75 Cashback</td>
+									      </tr>
+									      <tr>
+									        <td>Swiggy Freecharge Offer</td>
+									        <td>Upto Rs.150 Cashback</td>
+									      </tr>
+									      <tr>
+									        <td>Banglore,Hyderabad,Mumbai,Pune,Delhi,Gurgoan,Kolkata & Chennai</td>
+									        <td>Upto Rs.150 Discount</td>
+									      </tr>
+									    </tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 						<div class="row">
 							<div class="col-lg-12 col-md-12">
 								<h4>Temptatious Menu at Swiggy</h4>
-								<p class="con-para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-								Why do we use it?
-								It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+								<p class="con-para para_small">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Why do we use it?It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 								</p>
 							</div>
 						</div>

@@ -173,12 +173,16 @@ ul.unstyled li a {
   padding-left: 45px;
   padding-right: 20px;
 }
+.gly{
+      font-size: 12px;
+      padding-right: 5%;
+    }
 /*update-nag end*/
 
 
 /*  --============== // media queries for mobiles ===========----- */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .category-wise-home h2 {
         font-size: 23px;
         line-height: 34px;
@@ -198,8 +202,8 @@ ul.unstyled li a {
     }
     .header-nav-content {
       color: #fff !important;
-      font-size: 22px;
-      line-height: 50px;
+      font-size: 16px;
+      line-height: 0px;
       margin-left: 14px;
     }
     .btn_mobile{
@@ -208,4 +212,48 @@ ul.unstyled li a {
     .txt_small{
       font-size: 14px;
     }
+    h3{
+      font-size: 20px;
+    }
+    .carousel-control span {
+    font-size: 30px;
+    }
+    .carousel-indicators .active {
+    margin: 0;
+    width: 6px;
+    height: 6px;
+     background-color: #ffffff;
+    }
+    .carousel-indicators li {
+    width: 5px;
+    height: 5px;
+    }
+    .carousel-control{
+      left:10px;
+    }
+    .carousel-control.right {
+    right: 10px;
+    }
+    .gly{
+      font-size: 10px;
+      padding-right: 5%;
+    }
+    .rupee{
+      font-size: 16px;
+      padding: 8% 0% 0%;
+    }
+    .update-nag {
+      display: inline-block;
+      font-size: 15px;
+      font-weight: bold;
+      text-align: left;
+      background-color: #fff;
+      height: 40px;
+      -webkit-box-shadow: 0 0 0 0 rgba(0,0,0,.2);
+      box-shadow: 0 0 0 0 rgba(0,0,0,.1);
+      margin-bottom: 20px;
+      width: 100%;
+      border: 1px solid #DDDDDD;
+    }
+
 }

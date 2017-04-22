@@ -12,7 +12,9 @@
     color: #fff;
     border-bottom: 0 solid;
 }
-
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+     background: none !important;
+    }
 .header-nav-content {
     color: #fff !important;
     font-size: 25px;
@@ -24,7 +26,7 @@
 }
 
 .row2 {
-    padding: 20px 0;
+    padding: 2% 0;
 }
 
 .flipkart-navbar-input {
@@ -171,11 +173,15 @@
     margin-left: 15px;
     margin-top: 15px;
 }
-
+.search_bar{
+    margin: -1% 0% 0% 10%;
+}
 .menu {
     cursor: pointer;
 }
-
+.top_stories{
+      padding-left: 0px;
+}
 @media screen and (min-width: 768px) {
     .largenav {
         display: block;
@@ -313,7 +319,7 @@ ul.nav li.dropdown ul.dropdown-menu {
 
 /*   ====================== for mobile view =====================*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .largenav {
         display: block;
         margin-left: 10px;
@@ -327,4 +333,25 @@ ul.nav li.dropdown ul.dropdown-menu {
     .custom-popup-wrapper {
         width: 292px;
     }
-}
+    .row2 {
+        padding: 2% 0 1%;
+    }
+    .navbar-toggle {
+        margin-right: 6px;
+    }
+    .top_stories{
+      padding-left: 14px;
+    }
+    .navbar-brand {
+    padding:0;
+    } 
+    .flipkart-navbar-input {
+        font-size: 12px;
+    }
+    .header-nav-content {
+    color: #fff !important;
+    font-size: 16px;
+    line-height: 0px;
+    margin-left: 14px;
+    }
+} 

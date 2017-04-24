@@ -226,6 +226,16 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     url: '/blog/category',
                     templateUrl: 'modules/blog.category/blog.category.template.html'
                 })
+                // blog.post
+                .state('blog_post', {
+                    url: '/blog/post',
+                    templateUrl: 'modules/blog.post/blog.post.template.html'
+                })
+                //fab.deal.post
+                 .state('fab_deal_post', {
+                    url: '/fab-deal-post',
+                    templateUrl: 'modules/fab.deal.post/fab.deal.post.template.html'
+                })
         }
     ])
     // it is for authentication

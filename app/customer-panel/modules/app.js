@@ -231,6 +231,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     url: '/blog/post',
                     templateUrl: 'modules/blog.post/blog.post.template.html'
                 })
+                // coupon.popup
+                .state('coupon_popup', {
+                    url: '/coupon/popup',
+                    templateUrl: 'modules/coupon.popup/coupon.popup.template.html'
+                })
                 //fab.deal.post
                  .state('fab_deal_post', {
                     url: '/fab-deal-post',

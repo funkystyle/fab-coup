@@ -1,0 +1,143 @@
+.footer{
+	display: none !important;
+}
+.hs-sc-top {
+    background-color: #2f1231;
+    color: #6047AD;
+    padding: 1% 6%;
+    font-size: 24px;
+    z-index: 100;
+}
+.bg-w {
+    background-color: #fff;
+    padding: 0 12%;
+}
+.hs-sc-img {
+    margin: 12px auto;
+    text-align: center;
+}
+.hs-code {
+    border: 2px dashed rgba(0,0,0,.1);
+    padding: 0 24px;
+    height: 52px;
+    position: relative;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+.hs-goto-mrcht {
+    display: block;
+    color: #000000;
+    padding: 2% 0%;
+}
+.hs-sc-c-det {
+    margin: 1% 0% 2%;
+}
+.hs-scd-desp {
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    text-align: justify;
+    cursor: pointer;
+    color: rgba(0,0,0,.75);
+    margin: 0 0 12px;
+}
+.hs-scd-social {
+    margin: 24px 0;
+    font-size: 18px;
+}
+.hs-scd-social a{
+	color: #337ab7;
+}
+.hs-suggested-coupons {
+    padding: 1% 0 2%;
+}
+.page-h1 {
+    margin: 0 0 16px;
+    font-size: 24px;
+}
+.img {
+    max-height: 65%;
+    max-width: 100%;
+    vertical-align: middle;
+}
+.coupon-type {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 16px 0;
+    line-height: 1;
+    text-align: center;
+}
+.coupon-title {
+    display: table;
+    width: 100%;
+    text-align: center;
+    padding: 7%;
+}
+.coupon-btn {
+    width: 220px;
+    cursor: pointer;
+    background-color: #6047AD;
+    margin: 0 auto;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+}
+.coupon-btn, .hs-social>li>a {
+    height: 48px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.coupon-all {
+    padding: 4px 12px;
+    color: #6047AD;
+    display: block;
+    margin-top: 16px;
+    text-align: center;
+}
+.pad{
+	padding: 0;
+}
+.hs-foot {
+    background: #ececec;
+    padding: 48px 0 0;
+    margin-top: 24px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.hsf-top {
+    padding-bottom: 48px;
+}
+.hs-social {
+    margin: 0;
+}
+.coupon-btn, .hs-social>li>a {
+    height: 48px;
+    border-radius: 2px;
+    font-size: 16px;
+}
+.hs-social>li>a {
+    color: #fff;
+    display: block;
+    width: 140px;
+    line-height: 44px;
+    opacity: .9;
+}
+.hs-f-facebook {
+    background-color: #3b5998;
+    text-align: center;
+}
+.hs-f-google {
+    background-color: #dd4b39;
+    text-align: center;
+}
+.hs-f-twitter {
+    background-color: #00aced;
+    text-align: center;
+}
+.hs-f-pinterest {
+    background-color: #cb2027;
+    text-align: center;
+
+}

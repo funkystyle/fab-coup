@@ -1,9 +1,13 @@
 .footer{
 	display: none !important;
 }
+.text-center{
+	text-align: center;
+	text-align: -webkit-center;
+}
 .hs-sc-top {
     background-color: #2f1231;
-    color: #6047AD;
+    color: #ffffff;
     padding: 1% 6%;
     font-size: 24px;
     z-index: 100;
@@ -52,14 +56,16 @@
 .hs-suggested-coupons {
     padding: 1% 0 2%;
 }
-.page-h1 {
+.page_h1 {
     margin: 0 0 16px;
-    font-size: 24px;
 }
 .img {
     max-height: 65%;
     max-width: 100%;
     vertical-align: middle;
+}
+.row_1{
+	padding-left: 9%;
 }
 .coupon-type {
     font-size: 20px;
@@ -100,7 +106,7 @@
 }
 .hs-foot {
     background: #ececec;
-    padding: 48px 0 0;
+    padding: 48px 0;
     margin-top: 24px;
     color: #fff;
     position: relative;
@@ -140,4 +146,60 @@
     background-color: #cb2027;
     text-align: center;
 
+}
+.btn-info{
+	text-transform: uppercase;;
+}
+.right_border{
+	padding-right: 6%;
+	border-right: 1px solid white;
+}
+.left_border{
+	padding-left: 6%;
+}
+@media screen and (min-width: 320px) and (max-width:768px){
+	.hs-sc-top {
+    background-color: #2f1231;
+    color: #ffffff;
+    padding: 4% 6%;
+    font-size: 16px;
+    z-index: 100;
+	}
+	.hs-scd-social {
+    	margin: 24px 0;
+    	font-size: 16px;
+	}
+	.page-h1 {
+   		margin: 3% 0 4%;
+    	font-size: 22px;
+	}
+	.coupon-title {
+    	padding: 2% 7% 7%;
+	}
+	.hs-social>li>a {
+		margin-bottom: 4%;
+		width: 100%;
+	}
+	.right_border{
+		padding-right: 6%;
+		border-right: 1px solid white;
+	}
+	.left_border{
+		padding-left: 6%;
+	}
+	.ga{
+		margin-left: -13px;
+	}
+	.tw{
+		margin-left: -15px;
+	}
+	.row_1{
+		padding-left: 0;
+	}
+	h1{
+		font-size: 26px;
+	}
+	.page_h1 {
+    	margin: 7px 0 16px;
+	}
 }

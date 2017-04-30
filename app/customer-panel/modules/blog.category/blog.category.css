@@ -389,13 +389,16 @@ h4{
     	margin-left: -15px;
 	}
 	h3{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	body{
 		font-size: 15px;
 	}
 	.technology_txt2 {
     	font-size: 13px;
+ 	}
+ 	.header_img{
+ 		margin-left: 4%;
  	}
 	.post{
 		font-size: 13px;
@@ -412,11 +415,14 @@ h4{
 		font-size: 12px;
 	}
 	.label{
-		font-size: 60%;
+		font-size: 50%;
 	}
 	.word_press{
 		margin-left: 5%;
 	}
+}
+h1{
+	margin-bottom: 21px;
 }
 @media screen and (min-width: 412px) and (max-width: 414px){
 	.navbar-default .navbar-nav > li > a {
@@ -439,7 +445,10 @@ h4{
 	}
 	.technology_txt2 {
     	font-size: 15px;
-  }
+  	}
+  	.header_img{
+ 		margin-left: 10%;
+ 	}
 	.post{
 		font-size: 16px;
 	}
@@ -474,6 +483,9 @@ h4{
 	.navbar-default .navbar-nav > li > a {
     	font-size: 14px;
 	}
+	.navbar-default .navbar-nav>li>a:hover{
+		font-size: 14px !important;
+	}
 	.cont_pad{
 		padding: 0 15px;
 	}
@@ -507,7 +519,7 @@ h4{
 		font-size: 12px;
 	}
 	.label{
-		font-size: 60%;
+		font-size: 50%;
 	}
 	.foot_webicons {
     	margin: 0 0 0 -12px !important;

@@ -40,6 +40,9 @@ body{
 .navbar-default .navbar-nav>li>a:last-child,.navbar-default .navbar-nav>li>a:hover:last-child{
 	border-right: 1px solid #f1f1f1;
 }
+.dropdown-menu{
+	font-size: 14px;
+}
 .navbar-default .navbar-nav>li>a:hover {
     background-color: #ffffff; !important;
     color: red;
@@ -48,9 +51,15 @@ body{
     border-left:1px solid #f1f1f1;
     font-size: 18px;
 }
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #000000;
+}
 .btn_1{
 	background: none;
 	padding: 0;
+}
+h1{
+	margin-bottom: 21px;
 }
 .btn_1:hover{
 	color:red;
@@ -60,7 +69,10 @@ body{
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
      background: none !important;
-    }
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+    color: #000000;
+}
 /*navbarcss end*/
 /*carousel start*/
 .carousel {
@@ -106,6 +118,10 @@ background: #333333;
 .panel-body ul li{
 	float: left;
 	padding: 0px 30px 0px 0;
+}
+h4{
+	font-size: 18px;
+	font-weight: bold;
 }
 .panel-body ul li:first-child{
 	list-style: none;
@@ -432,4 +448,321 @@ background: #333333;
 .copy span{
 	color: #ffffff;
 	font-size: 12px;
+}
+@media screen and (min-width: 320px) and (max-width: 359px){
+	.navbar-default .navbar-nav > li > a {
+    	font-size: 14px;
+	}
+	.navbar-default .navbar-nav>li>a:hover{
+		font-size: 14px !important;
+	}
+	.panel_pad {
+    	padding: 15px 20px;
+	}
+	.cont_pad{
+		padding: 0 15px;
+	}
+	.row_carousel {
+    	margin: 0;
+	}
+	.h3_txt {
+    	font-size: 20px;
+    	margin-left: 0%;
+	}
+	.row2_1 {
+    	margin-left: -15px;
+	}
+
+	h3{
+		font-size: 18px;
+	}
+	h4{ font-size: 15px; }
+	body{
+		font-size: 13px;
+	}
+	.technology_txt2 {
+    	font-size: 11px;
+	}
+	.post{
+		font-size: 12px;
+	}
+	.col_3_border_top
+	{
+		border-top:none;
+		margin-top: 3%;
+	}
+	.lorem{
+		font-size: 12px;
+	}
+	.views{
+		font-size: 12px;
+	}
+	.label{
+		font-size: 50%;
+	}
+	.foot_webicons {
+    	margin: 0 0 0 -12px !important;
+	}
+	.panel-body ul {
+    	margin: 0;
+	}
+	.pan_mar{
+		margin-top: -4%;
+	}
+	.red_li{
+		margin-left: -7% !important;
+	}
+	.red_li li {
+    	padding: 0 10px 0 0 !important;
+	}
+	.btn_social {
+    	padding: 5px 10px;
+    	font-size: 15px;
+	}
+	.about_author_para {
+    	font-size: 14px;
+	}
+	.test_txt {
+   		font-size: 14px;
+    	margin-left: 12%;
+	}
+	.reply_btn {
+		margin-bottom: 2%;
+	}
+	.post_comment_btn {
+		margin-bottom: 2%;
+    	font-size: 12px;
+    	padding: 3%;
+	}
+	.gg_btn{
+		font-size: 12px;
+    	padding: 10px;
+	}
+	.fa_1 {
+    	padding-right: 7px;
+    	font-size: 14px !important;
+    	padding-top: 8%;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 375px){
+	.navbar-default .navbar-nav > li > a {
+    	font-size: 14px;
+	}
+	.navbar-default .navbar-nav>li>a:hover{
+		font-size: 14px !important;
+	}
+	.panel_pad {
+    	padding: 15px 20px;
+	}
+	.cont_pad{
+		padding: 0 15px;
+	}
+	.row_carousel {
+    	margin: 0;
+	}
+	.h3_txt {
+    	font-size: 20px;
+    	margin-left: 0%;
+	}
+	.row2_1 {
+    	margin-left: -15px;
+	}
+	.header_img{
+ 		margin-left: 4%;
+ 	}
+	h3{
+		font-size: 18px;
+	}
+	h4{ font-size: 15px; }
+	body{
+		font-size: 13px;
+	}
+	.technology_txt2 {
+    	font-size: 11px;
+	}
+	.post{
+		font-size: 12px;
+	}
+	.col_3_border_top
+	{
+		border-top:none;
+		margin-top: 3%;
+	}
+	.lorem{
+		font-size: 12px;
+	}
+	.views{
+		font-size: 12px;
+	}
+	.label{
+		font-size: 50%;
+	}
+	.foot_webicons {
+    	margin: 0 0 0 8px !important;
+	}
+	.panel-body ul {
+    	margin: 0;
+	}
+	.pan_mar{
+		margin-top: -4%;
+	}
+	.red_li{
+		margin-left: -7% !important;
+	}
+	.red_li li {
+    	padding: 0 10px 0 0 !important;
+	}
+	.btn_social {
+    	padding: 5px 14px;
+    	font-size: 18px;
+	}
+	.about_author_para {
+    	font-size: 14px;
+	}
+	.test_txt {
+   		font-size: 14px;
+    	margin-left: 10%;
+	}
+	.reply_btn {
+		margin-bottom: 2%;
+	}
+	.post_comment_btn {
+		margin-bottom: 2%;
+    	font-size: 14px;
+    	padding: 3%;
+	}
+	.word_press{
+		margin-left: 5%;
+	}
+	.entertain_txt_1{
+		font-size: 14px;
+	}
+	.red_li {
+    	font-size: 16px;
+   		margin: 0 0 7% -5% !important;
+	}
+	.gg_btn{
+		font-size: 12px;
+    	padding: 10px;
+	}
+	.fa_1 {
+    	padding-right: 7px;
+    	font-size: 14px !important;
+    	padding-top: 8%;
+	}
+}
+@media screen and (min-width: 412px) and (max-width: 414px){
+	.navbar-default .navbar-nav > li > a {
+    	font-size: 14px;
+	}
+	.navbar-default .navbar-nav>li>a:hover{
+		font-size: 14px !important;
+	}
+	.panel_pad {
+    	padding: 15px 20px;
+	}
+	.cont_pad{
+		padding: 0 15px;
+	}
+	.row_carousel {
+    	margin: 0;
+	}
+	.h3_txt {
+    	font-size: 20px;
+    	margin-left: 0%;
+	}
+	.row2_1 {
+    	margin-left: -15px;
+	}
+	.header_img{
+ 		margin-left: 14%;
+ 	}
+	h3{
+		font-size: 18px;
+	}
+	h4{ font-size: 15px; }
+	body{
+		font-size: 18px;
+	}
+	.technology_txt2 {
+    	font-size: 11px;
+	}
+	.catagory {
+		font-size: 25px;
+	}
+	.post{
+		font-size: 12px;
+	}
+	.col_3_border_top
+	{
+		border-top:none;
+		margin-top: 3%;
+	}
+	.lorem{
+		font-size: 14px;
+	}
+	.views{
+		font-size: 14px;
+	}
+	.label{
+		font-size: 50%;
+	}
+	.foot_webicons {
+    	margin: 0 0 0 8px !important;
+    	font-size: 40px !important;
+	}
+	.panel-body ul {
+    	margin: 0 0 0 7%;
+    	font-size: 18px;
+	}
+	.pan_mar{
+		margin-top: -4%;
+	}
+	.red_li{
+		margin-left: -7% !important;
+	}
+	.red_li li {
+    	padding: 0 10px 0 0 !important;
+    	font-size: 20px;
+	}
+	.btn_social {
+    	padding: 5px 14px;
+    	font-size: 25px;
+	}
+	.about_author_para {
+    	font-size: 16px;
+	}
+	.test_txt {
+   		font-size: 14px;
+    	margin-left: 10%;
+	}
+	.reply_btn {
+		margin-bottom: 2%;
+	}
+	.post_comment_btn {
+		margin-bottom: 2%;
+    	font-size: 14px;
+    	padding: 3%;
+	}
+	.word_press{
+		margin-left: 10%;
+	}
+	.word_press2{
+		margin-left: 4%;
+	}
+	.red_li {
+    	font-size: 16px;
+   		margin: 0 0 7% -5% !important;
+	}
+	.lat_blog {
+		font-size: 20px;
+	}
+	.fa_1 {
+    	padding-right: 7px;
+    	font-size: 14px !important;
+    	padding-top: 8%;
+	}
+	.entertain_txt_1{
+		font-size: 16px;
+	}
 }

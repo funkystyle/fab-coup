@@ -241,6 +241,14 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                     url: '/fab-deal-post',
                     templateUrl: 'modules/fab.deal.post/fab.deal.post.template.html'
                 })
+                 .state('brand_page', {
+                    url: '/brandpage',
+                    templateUrl: 'modules/brandpage/brandpage.template.html'
+                })
+                 .state('post_final', {
+                    url: '/postfinal',
+                    templateUrl: 'modules/postfinal/postfinal.template.html'
+                })
         }
     ])
     // it is for authentication

@@ -2,7 +2,9 @@
     background-color: #2f1231;
     color: #FFFFFF;
 }
-
+body{
+    font-size: 14px;
+}
 .navbar,
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
@@ -197,7 +199,7 @@
 }
 
 .top-store-ul {
-    width: 600px !important;
+    width: 505px !important;
 }
 
 .top-store-ul .row .col-lg-4 li {

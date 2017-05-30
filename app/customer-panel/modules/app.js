@@ -238,11 +238,11 @@ angular.module('APP', ['ui.router', 'oc.lazyLoad'])
                 })
                 //fab.deal.post
                  .state('fab_deal_post', {
-                    url: '/fab-deal-post',
+                    url: '/fab/deal/post',
                     templateUrl: 'modules/fab.deal.post/fab.deal.post.template.html'
                 })
                   .state('fab_deal_home', {
-                    url: '/fab-deal-home',
+                    url: '/fab/deal/home',
                     templateUrl: 'modules/fab.deal.home/fab.deal.home.template.html'
                 })
                  .state('brand_page', {

@@ -99,6 +99,9 @@ div.thumb {
     margin-top:10px;
     margin-bottom: 10px;
 }
+.h4_height{
+    min-height: 44px;
+}
 @media screen and (max-width: 359px){
     .overlay-on-image {
         height: 96px;

@@ -104,7 +104,9 @@ a.right span {
 h5 {
     font-family: Dosis-Medium;
 }
-
+.h4_height{
+  min-height: 44px;
+}
 .top-deal-img {
     max-height: 150px;
 }

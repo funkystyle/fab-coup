@@ -5,41 +5,115 @@
 	font-weight: bold;
 	text-align: center;
 }
-.popular_txt{ font-weight: bold;}
-.border_around{ border-top:1px solid #eee; border-right:1px solid #eee; border-bottom: 1px solid #eee;}
-.border_around_last{ border-top:1px solid #eee; }
-.para1{ font-size: 12px; }
-.set_position{ padding-top: 15%; padding-left: 0;}
-.pad_left{ padding-left: 0; }
-.row_pad{padding: 2%;}
-.mobile_format{ background: #eeeeee; margin-right: 6%; padding-left: 2%;}
-.mobile_txt{ padding-left: 2%; padding-left: 2%;}
-.mobille_format_1{  background: #ffffff; margin-left: 15px; }
-.row_mar{ margin: 0 -3px; }
-.media_pad{ padding-top: 11%; font-weight: bold; }
-.best_sell_txt{ font-weight: bold; }
-.row_best{ margin-bottom: 2px; border-top: 1px solid #eee;padding:4px 0%; }
-.row_best_1{ margin-bottom: 2px; border-top: 1px solid #eee; border-bottom: 1px solid #eee;padding:4px 0%; }
-.products-list{  border-right: 1px solid #eee;}
-.online_mobile_txt{ font-weight: bold; font-size: 20px; padding: 1% 0; }
-.pad_panel{ padding-left: 12%; }
-.about_raja{ border-bottom: 1px solid #eeeeee; font-weight: bold; padding-bottom: 1%; }
+.popular_txt{
+ 	font-weight: bold;
+ }
+.border_around{ 
+	border-top:1px solid #eee;
+	border-right:1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
+.border_around_last{
+	border-top:1px solid #eee;
+}
+.para1{
+	font-size: 17px;
+}
+.set_position{
+	padding-top: 15%;
+	padding-left: 0;
+}
+.pad_left{ 
+	padding-left: 0;
+}
+.row_pad{
+	padding: 2%;
+}
+.mobile_format{
+	background: #eeeeee;
+	margin-right: 6%;
+	padding-left: 2%;
+}
+.mobile_txt{
+	padding-left: 2%;
+	padding-left: 2%;
+
+}
+.mobille_format_1{  
+	background: #ffffff; 
+	margin-left: 15px; 
+}
+.row_mar{ 
+	margin: 0 -3px; 
+}
+.media_pad{
+	padding-top: 11%;
+	font-weight: bold;
+}
+.best_sell_txt{ 
+	font-weight: bold;
+}
+.row_best{ 
+	margin-bottom: 2px;
+	border-top: 1px solid #eee;
+	padding:4px 0%;
+}
+.row_best_1{ 
+	margin-bottom: 2px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	padding:4px 0%;
+}
+.products-list{  
+	border-right: 1px solid #eee;
+}
+.online_mobile_txt{ 
+	font-weight: bold; 
+	font-size: 20px; 
+	padding: 1% 0;
+}
+.pad_panel{ 
+	padding-left: 12%;
+}
+.about_raja{ 
+	border-bottom: 1px solid #eeeeee;
+	font-weight: bold;
+	padding-bottom: 1%;
+}
 .row_bot_pad{
 	padding-bottom: 2%
 }
 @media screen and (min-width: 320px) and (max-width: 359px){
 	.btn{
 		font-size: 12px;
-		padding: 8px 5px;
+		padding: 4px 5px;
 	}
-	.main_content{ margin-left: 2%; }
-	h6{ font-size: 12px; padding-left: 10px; }
+	.popular_txt {
+    	font-size: 12px;
+	}
+	.para1 {
+    	font-size: 14px;
+	}
+	.main_content{
+	 	margin-left: 2%;
+	  }
+	.row_best { 
+		border-top: none;
+	}
+	h6{
+		font-size: 14px;
+		padding-left: 10px;
+		}
 	.products-list {
-   	 border-bottom: 1px solid #eee;
-   	 border-left: 1px solid #eee;
+   	 	border-bottom: 1px solid #eee;
+   	 	border-left: 1px solid #eee;
+	}
+	.border_around_last {
+    	border-bottom: 1px solid #eee;
 	}
 	h3{
 		font-size: 20px;
+		margin-top: 8px;
 	}
 	.mobile_format {
     	padding: 1% 1% 1% 8%;
@@ -52,5 +126,206 @@
 	.product-price{
 		text-align: center;
 	}
-	.online_mobile_txt{ font-size: 18px; padding: 1% 1%; text-align: center; }
+	.online_mobile_txt{
+		font-size: 16px;
+		padding: 1% 1%;
+		text-align: center;
+	}
+	.about_raja{
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+	.about_para{ 
+		padding: 0% 2%;
+		text-align: justify;
+	}
+	h5{
+		font-size: 16px;
+	}
+}
+@media screen and (min-width: 360px) and (max-width: 374px){
+	.btn{
+		font-size: 14px;
+		padding: 4px 5px;
+	}
+	.popular_txt {
+    	font-size: 14px;
+	}
+	.para1{ 
+		font-size: 15px;
+	}
+	.border_around_last {
+    	border-bottom: 1px solid #eee;
+	}
+	.main_content{ 
+		margin-left: 2%;
+	}
+	h6{
+		font-size: 14px;
+		padding-left: 10px;
+	}
+	.products-list {
+   	 border-bottom: 1px solid #eee;
+   	 border-left: 1px solid #eee;
+	}
+	.row_best { 
+		border-top: none;
+	}
+	h3{
+		font-size: 20px;
+		margin-top: 8px;
+	}
+	.panel {
+    	margin-bottom: 0px;
+	}
+	.mobile_format {
+    	padding: 1% 1% 1% 8%;
+    	margin-bottom: 1%;
+    	margin-left: 6%;
+	}
+	.product-title{
+		text-align: center;
+	}
+	.media_pad{
+	 padding-top: 7%; 
+	}
+	.product-price{
+		text-align: center;
+	}
+	.online_mobile_txt{ 
+		font-size: 18px; 
+		padding: 1% 1%; 
+		text-align: center;
+	}
+	.about_raja{
+		padding-left: 20px;
+		padding-bottom: 13px;
+	}
+	.row_best { 
+		border-top: none;
+	}
+	.about_para{
+		padding: 0% 5%;
+		text-align: justify;
+	}
+}
+@media screen and (min-width: 375px) and (max-width: 411px){
+	.btn{
+		font-size: 14px;
+		padding: 4px 5px;
+	
+	}
+	.border_around_last {
+    	border-bottom: 1px solid #eee;
+	}
+	.popular_txt {
+    	font-size: 14px;
+	}
+	.main_content{ 
+		margin-left: 2%;
+	}
+	h6{
+		font-size: 16px;
+		padding-left: 10px;
+	}
+	.products-list {
+   	 border-bottom: 1px solid #eee;
+   	 border-left: 1px solid #eee;
+	}
+	h3{
+		font-size: 20px;
+		margin-top: 8px;
+	}
+	.panel {
+    	margin-bottom: 0px;
+	}
+	.mobile_format {
+    	padding: 1% 1% 1% 8%;
+    	margin-bottom: 1%;
+    	margin-left: 6%;
+	}
+	.product-title{
+		text-align: center;
+	}
+	.product-price{
+		text-align: center;
+	}
+	.online_mobile_txt{ 
+		font-size: 18px; 
+		padding: 1% 1%; 
+		text-align: center;
+	}
+	.about_raja{
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+	.about_para{
+		padding: 0% 3%;
+		text-align: justify;
+		font-size: 17px;
+	}
+	.media_pad {
+    	padding-top: 7%;
+	}
+}
+@media screen and (min-width: 412px) and (max-width: 414px){
+	.btn{
+		font-size: 16px;
+		padding: 4px 5px;
+	}
+	.row_best { 
+		border-top: none;
+	}
+	h5{ 
+		font-size: 16px;
+	}
+	.border_around_last {
+    	border-bottom: 1px solid #eee;
+	}
+	.para1{ 
+		font-size: 18px;
+	}
+	.main_content{ 
+		margin-left: 2%; 
+	}
+	h6{
+		font-size: 14px;
+		padding-left: 10px;
+	}
+	.products-list {
+   		border-bottom: 1px solid #eee;
+   		border-left: 1px solid #eee;
+	}
+	.media_pad{
+		padding-top: 7%;
+		padding-left: 14%;
+	}
+	h3{
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	.mobile_format {
+    	padding: 1% 1% 1% 8%;
+    	margin-bottom: 1%;
+    	margin-left: 6%;
+	}
+	.product-title{
+		text-align: center;
+	}
+	.product-price{
+		text-align: center;
+	}
+	.online_mobile_txt{ 
+		font-size: 18px; 
+		padding: 1% 1%; 
+		text-align: center;
+	}
+	.about_raja{
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+	.about_para{
+		padding: 0% 3%;
+		text-align: justify;
+	}
 }

@@ -166,7 +166,9 @@ ul.unstyled li a {
 .update-nag > .update-split.update-info{
   background: #5bc0de!important;
 }
-
+h3{
+  margin-top: 8px;
+}
 
 
 .update-nag > .update-text{

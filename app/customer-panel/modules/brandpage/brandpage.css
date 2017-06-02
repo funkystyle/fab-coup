@@ -19,7 +19,9 @@ body{
   border: none;
   float: left;
 }
-
+.h4_height{
+  min-height: 44px;
+}
 .rating > input { display: none; } 
 .rating > label:before { 
   margin: 5px;
@@ -153,14 +155,17 @@ section.range-slider input:last-of-type::-moz-range-track {
 .product-title { border-bottom: 1px solid #eaeaea;}
 .buynowbtn { margin: 0px auto;  display: table; padding: 5px 25px; font-size: 16px;}
 .products-list {padding-right: 0px; padding-left: 0px; z-index: 9;}
-.product-border-main { border-right: 1px solid #eaeaea;}
+.product-border-main { border-right: 1px solid #eaeaea;  border-top: 1px solid #eaeaea;}
 .product-border-main:first-child { border-left: 1px solid #eaeaea;}
-.products-row-main { border-top: 1px solid #eaeaea;}
 .products-main { margin-bottom: 25px;}
+.product-buynow{ padding-bottom: 10px; }
 .col_md_9_pad{ padding-right: 0; }
 .showmore-head h3 { margin: 0px; padding: 8px; text-align: center; font-weight: bold; background: #eaeaea;}
 .showmore-text-head h4 { padding-top: 10px; border-bottom: 1px solid #bbb; padding-bottom: 5px;}
 .showmore-text-head p { text-align: justify; }
+.h4_height{
+  min-height: 44px;
+}
 .subscribe-form {
   position: relative;
   padding: 0px;
@@ -340,7 +345,7 @@ table .success, .table .success, table .warning, .table .warning, table .danger,
     .pricerange-radio input[type=checkbox]{width: 18px;height: 13px;}
     .rating { font-size: 11px; }
     .product-specifications ul li{ margin-left: -10%;  font-size: 15px;}
-    .showmore-head h3 { font-size: 20px; }
+    .showmore-head h3 { font-size: 20px; background: none;}
     .subscribe-submit {padding-left: 7px;height: 29px;width: 82px;}
     .pad{ padding:0; }
      .ratethisproduct-ratingshead a,.ratethisproduct-reviewshead a, .amazon-moredetails a{ font-size: 12px; }
@@ -416,7 +421,7 @@ table .success, .table .success, table .warning, .table .warning, table .danger,
     .pricerange-radio input[type=checkbox]{width: 18px;height: 13px;}
     .rating { font-size: 11px; }
     .product-specifications ul li{margin-left: -10%;font-size: 14px;}
-    .showmore-head h3 { font-size: 20px; }
+    .showmore-head h3 { font-size: 20px; background: none; }
     .subscribe-submit {padding-left: 7px;height: 29px;width: 82px;}
     .pad{ padding:0; }
      .ratethisproduct-ratingshead a,.ratethisproduct-reviewshead a, .amazon-moredetails a{font-size: 15px;}
@@ -494,7 +499,7 @@ table .success, .table .success, table .warning, .table .warning, table .danger,
     .pricerange-radio input[type=checkbox]{width: 18px;height: 13px;}
     .rating { font-size: 11px; }
     .product-specifications ul li{margin-left: -10%;font-size: 16px;}
-    .showmore-head h3 { font-size: 20px; }
+    .showmore-head h3 { font-size: 20px; background: none;}
     .subscribe-submit {padding-left: 7px;height: 34px;width: 115px;}
     .pad{ padding:0; }
      .ratethisproduct-ratingshead a,.ratethisproduct-reviewshead a, .amazon-moredetails a{font-size: 17px;}
